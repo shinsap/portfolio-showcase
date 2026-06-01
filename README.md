@@ -26,7 +26,7 @@ I build small to mid-sized web products and operational tools from planning to d
 | [BQ Menu](projects/bq-menu.md) | Closed sales demo | Active | Vercel, frontend app | Demo-oriented business tool |
 | [Denchichou](projects/denchichou.md) | Local-first PWA | In development | PWA, Firebase-related config | Care-worker battery replacement record app |
 | [Shinkyu](projects/shinkyu.md) | Sales support tool | Active | Cloudflare Pages/Workers | Business tool for acupuncture clinic sales |
-| [Kombu](projects/kombu.md) | Optimization tool | Active/public | Python, Vercel | Public repo, currently operated on Vercel |
+| [Pack Optimizer](projects/pack-optimizer.md) | Optimization tool | Active/public | Next.js, Python, Vercel | Public repo, currently operated on Vercel |
 
 ## AI Tool Usage
 
