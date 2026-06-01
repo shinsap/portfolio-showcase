@@ -23,7 +23,7 @@ English version: [../README.md](../README.md)
 
 | Project | Type | Status | Stack | Notes |
 |---|---|---|---|---|
-| [Rescue Cat Card v4](projects/rescuecat-v4.md) | 緊急時ペット保護サービス | 開発中 | React, TypeScript, Supabase, Cloudflare Pages | 開発/staging分離、security cleanup、workflow整理 |
+| [Rescue Cat Card v4](projects/rescuecat-v4.md) | 緊急時ペット保護サービス | ローンチ済み / 稼働中 | React, TypeScript, Supabase, Cloudflare Pages | staging検証付きの運用、security cleanup、workflow整理 |
 | [Nortelia LP](projects/nortelia-lp.md) | ランディングページ | 稼働中 | React/modern frontend | 公開向けのブランド/サービスページ |
 | [BQ Menu](projects/bq-menu.md) | クローズド営業デモ | 稼働中 | Vercel, frontend app | 営業先デモ用途の業務ツール |
 | [Denchichou](projects/denchichou.md) | Local-first PWA | 開発中 | PWA, Firebase関連設定 | 介護職員向け補聴器電池交換記録アプリ |

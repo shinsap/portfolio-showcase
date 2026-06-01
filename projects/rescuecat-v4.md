@@ -2,7 +2,7 @@
 
 ## Overview
 
-Rescue Cat Card is a service concept for emergency situations where a third party can scan an NFC/QR card and access information needed to protect a cat when the owner is unable to respond.
+Rescue Cat Card is a launched service for emergency situations where a third party can scan an NFC/QR card and access information needed to protect a cat when the owner is unable to respond.
 
 ## Role
 
@@ -26,10 +26,10 @@ Rescue Cat Card is a service concept for emergency situations where a third part
 
 The project uses separate repositories for active development and staging/testing.
 
-- `rescuecat-v4`: active development line
+- `rescuecat-v4`: launched active service and main development line
 - `rescuecat-v4-staging`: staging and pre-production testing
 
-Large changes are validated through staging before being reflected back into the main development line.
+Large changes are validated through staging before being reflected back into the active service line.
 
 ## Security and Maintenance Work
 

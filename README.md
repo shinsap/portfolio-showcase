@@ -21,7 +21,7 @@ I build small to mid-sized web products and operational tools from planning to d
 
 | Project | Type | Status | Stack | Notes |
 |---|---|---|---|---|
-| [Rescue Cat Card v4](projects/rescuecat-v4.md) | Emergency pet-care service | Active development | React, TypeScript, Supabase, Cloudflare Pages | Development/staging split, security cleanup, workflow review |
+| [Rescue Cat Card v4](projects/rescuecat-v4.md) | Emergency pet-care service | Launched / active | React, TypeScript, Supabase, Cloudflare Pages | Production operation with staging validation, security cleanup, workflow review |
 | [Nortelia LP](projects/nortelia-lp.md) | Landing page | Active | React/modern frontend | Public-facing marketing/brand page |
 | [BQ Menu](projects/bq-menu.md) | Closed sales demo | Active | Vercel, frontend app | Demo-oriented business tool |
 | [Denchichou](projects/denchichou.md) | Local-first PWA | In development | PWA, Firebase-related config | Care-worker battery replacement record app |
