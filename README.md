@@ -2,6 +2,8 @@
 
 GitHub: https://github.com/shinsap
 
+Japanese version: [ja/README.md](ja/README.md)
+
 This repository is a public portfolio index for selected projects. Most production and in-progress repositories are private because they include client work, operational settings, or active product code. This showcase summarizes the scope, architecture, development process, and selected implementation patterns that can be shared publicly.
 
 ## Profile
