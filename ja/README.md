@@ -28,7 +28,7 @@ English version: [../README.md](../README.md)
 | [BQ Menu](projects/bq-menu.md) | クローズド営業デモ | 稼働中 | Vercel, frontend app | 営業先デモ用途の業務ツール |
 | [Denchichou](projects/denchichou.md) | Local-first PWA | 開発中 | PWA, Firebase関連設定 | 介護職員向け補聴器電池交換記録アプリ |
 | [Shinkyu](projects/shinkyu.md) | 営業支援ツール | 稼働中 | Cloudflare Pages/Workers | 鍼灸治療院向け営業ツール |
-| [Kombu](projects/kombu.md) | 最適化ツール | 稼働中/public | Python, Vercel | public repo、現在はVercelで運用 |
+| [Pack Optimizer](projects/pack-optimizer.md) | 最適化ツール | 稼働中/public | Next.js, Python, Vercel | public repo、現在はVercelで運用 |
 
 ## AIツール活用
 
