@@ -6,6 +6,10 @@ Pack Optimizerは、不定貫商材の固定個数パックを目標重量範囲
 
 GitHub: https://github.com/shinsap/pack-optimizer
 
+## 公開URL
+
+- App: https://pack-optimizer.vercel.app/
+
 ## 担当範囲
 
 - ツール企画

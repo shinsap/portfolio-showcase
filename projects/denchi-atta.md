@@ -6,6 +6,11 @@ Denchi Atta? is a personal and family-use PWA for recording household batteries.
 
 The product is separate from Hearing Aid Denchichou. Denchi Atta? is focused on everyday household battery management, not care-facility hearing-aid battery operations.
 
+## Public URL
+
+- LP: https://nortelia.co.jp/apps/battery/
+- App: https://app.nortelia.co.jp/
+
 ## Role
 
 - Product planning

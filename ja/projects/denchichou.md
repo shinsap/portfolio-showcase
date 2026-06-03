@@ -6,6 +6,11 @@
 
 補聴器でんち帳のLPはNortelia LP内に内包されています。このLPは補聴器の電池検索ができるページになっており、検索を入口として補聴器でんち帳PWAへつなぐ導線を持っています。
 
+## 公開URL
+
+- LP: https://nortelia.co.jp/apps/denchichou/
+- App: https://denchichou.nortelia.co.jp/
+
 ## 担当範囲
 
 - プロダクト企画

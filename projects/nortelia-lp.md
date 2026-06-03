@@ -6,6 +6,10 @@ Nortelia LP is a landing page project intended to communicate a product or servi
 
 It also includes the landing page for Hearing Aid Denchichou. That LP includes a hearing-aid battery search function and works as the lead-in to the Hearing Aid Denchichou PWA.
 
+## Public URL
+
+- LP: https://nortelia.co.jp
+
 ## Role
 
 - Page structure planning

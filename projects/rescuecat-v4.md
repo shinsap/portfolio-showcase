@@ -4,6 +4,10 @@
 
 Rescue Cat Card is a launched service for emergency situations where a third party can scan an NFC/QR card and access information needed to protect a cat when the owner is unable to respond.
 
+## Public URL
+
+- App: https://app.rescuecat.jp/
+
 ## Role
 
 - Product planning

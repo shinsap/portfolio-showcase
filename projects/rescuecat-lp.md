@@ -6,6 +6,10 @@ Rescue Cat Card LP is the public-facing landing page for Rescue Cat Card. It exp
 
 The LP is separate from the application implementation. Its role is to communicate the value of the service clearly, reduce hesitation, and route users toward the Rescue Cat Card product.
 
+## Public URL
+
+- LP: https://rescuecat.jp/
+
 ## Role
 
 - Landing page structure planning

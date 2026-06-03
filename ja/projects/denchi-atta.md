@@ -6,6 +6,11 @@
 
 補聴器でんち帳とは別のプロダクトです。電池あった？は家庭内の電池管理に特化しており、介護施設向けの補聴器電池記録業務とは用途を分けています。
 
+## 公開URL
+
+- LP: https://nortelia.co.jp/apps/battery/
+- App: https://app.nortelia.co.jp/
+
 ## 担当範囲
 
 - プロダクト企画

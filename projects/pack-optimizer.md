@@ -6,6 +6,10 @@ Pack Optimizer is a public optimization tool for creating fixed-count packs of v
 
 GitHub: https://github.com/shinsap/pack-optimizer
 
+## Public URL
+
+- App: https://pack-optimizer.vercel.app/
+
 ## Role
 
 - Tool planning

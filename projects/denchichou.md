@@ -6,6 +6,11 @@ Hearing Aid Denchichou is a PWA for the care industry. It is designed for record
 
 The related landing page is included inside the Nortelia LP. That LP includes a hearing-aid battery search function, which works as the public lead-in to the Hearing Aid Denchichou PWA.
 
+## Public URL
+
+- LP: https://nortelia.co.jp/apps/denchichou/
+- App: https://denchichou.nortelia.co.jp/
+
 ## Role
 
 - Product planning
