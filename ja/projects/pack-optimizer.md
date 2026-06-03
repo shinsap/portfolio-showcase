@@ -2,7 +2,7 @@
 
 ## 概要
 
-Pack Optimizerは、固定個数のパックを目標重量範囲内で作るためのpublic optimization toolです。現在はVercelで運用しています。
+Pack Optimizerは、固定個数のパックを目標重量範囲内で作るための公開用最適化ツールです。現在はVercelで運用しています。
 
 GitHub: https://github.com/shinsap/pack-optimizer
 
@@ -12,7 +12,7 @@ GitHub: https://github.com/shinsap/pack-optimizer
 - Next.jsフロントエンド実装
 - Pythonベースの最適化API
 - Vercelデプロイ設定
-- repository maintenance
+- リポジトリ保守
 
 ## 技術スタック
 
@@ -22,10 +22,10 @@ GitHub: https://github.com/shinsap/pack-optimizer
 
 ## 保守メモ
 
-現在のVercel deploymentは `pack-optimizer` repository に接続されています。古い `kombu` repository は現在のpublic projectではないため、ポートフォリオから外しています。
+現在のVercelデプロイは `pack-optimizer` リポジトリに接続されています。古い `kombu` リポジトリは現在の公開プロジェクトではないため、ポートフォリオから外しています。
 
 ## 伝えられること
 
-- 小規模utility開発
+- 小規模ユーティリティ開発
 - public repository運用
-- フロントエンドとPython最適化バックエンドを含むfull-stack deployment
+- フロントエンドとPython最適化バックエンドを含むフルスタックデプロイ
