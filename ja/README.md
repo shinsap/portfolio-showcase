@@ -24,9 +24,11 @@ English version: [../README.md](../README.md)
 | Project | Type | Status | Stack | Notes |
 |---|---|---|---|---|
 | [Rescue Cat Card v4](projects/rescuecat-v4.md) | 緊急時ペット保護サービス | ローンチ済み / 稼働中 | React, TypeScript, Supabase, Cloudflare Pages | staging検証付きの運用、security cleanup、workflow整理 |
-| [Nortelia LP](projects/nortelia-lp.md) | ランディングページ | 稼働中 | React/modern frontend | 公開向けのブランド/サービスページ |
-| [BQ Menu](projects/bq-menu.md) | クローズド営業デモ | 稼働中 | Vercel, frontend app | 営業先デモ用途の業務ツール |
-| [Denchichou](projects/denchichou.md) | Local-first PWA | 開発中 | PWA, Firebase関連設定 | 介護職員向け補聴器電池交換記録アプリ |
+| [Rescue Cat Card LP](projects/rescuecat-lp.md) | ランディングページ | 稼働中 | Modern frontend, Cloudflare/Vercel向けデプロイ | Rescue Cat Cardの認知・説明・導線を担う公開ページ |
+| [Nortelia LP](projects/nortelia-lp.md) | ランディングページ | 稼働中 | React/modern frontend | 公開向けのブランド/サービスページ。補聴器でんち帳LPも内包 |
+| [電池あった？](projects/denchi-atta.md) | 家庭向け電池記録PWA | 開発中 | PWA, local-first app | 個人・家庭内の電池を記録し、交換時にどの電池を使うか確認するアプリ |
+| [BQ Menu](projects/bq-menu.md) | ホテル宴会場向け省力化システム | 稼働中 / クローズドデモ | Vercel, frontend app, QR menu flow | QRを読み込むとメニューが表示される宴会場向けシステム |
+| [補聴器でんち帳](projects/denchichou.md) | 介護業界向け補聴器電池記録PWA | 開発中 | PWA, Firebase関連設定, LP検索導線 | 施設利用者等の補聴器電池を記録し、検索LPからアプリへつなぐ導線を持つ |
 | [Shinkyu](projects/shinkyu.md) | 営業支援ツール | 稼働中 | Cloudflare Pages/Workers | 鍼灸治療院向け営業ツール |
 | [Pack Optimizer](projects/pack-optimizer.md) | 最適化ツール | 稼働中/public | Next.js, Python, Vercel | public repo、現在はVercelで運用 |
 

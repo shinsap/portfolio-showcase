@@ -22,9 +22,11 @@ I build small to mid-sized web products and operational tools from planning to d
 | Project | Type | Status | Stack | Notes |
 |---|---|---|---|---|
 | [Rescue Cat Card v4](projects/rescuecat-v4.md) | Emergency pet-care service | Launched / active | React, TypeScript, Supabase, Cloudflare Pages | Production operation with staging validation, security cleanup, workflow review |
-| [Nortelia LP](projects/nortelia-lp.md) | Landing page | Active | React/modern frontend | Public-facing marketing/brand page |
-| [BQ Menu](projects/bq-menu.md) | Closed sales demo | Active | Vercel, frontend app | Demo-oriented business tool |
-| [Denchichou](projects/denchichou.md) | Local-first PWA | In development | PWA, Firebase-related config | Care-worker battery replacement record app |
+| [Rescue Cat Card LP](projects/rescuecat-lp.md) | Landing page | Active | Modern frontend, Cloudflare/Vercel-oriented deployment | Public acquisition and explanation page for Rescue Cat Card |
+| [Nortelia LP](projects/nortelia-lp.md) | Landing page | Active | React/modern frontend | Public-facing marketing/brand page, including the Hearing Aid Denchichou LP |
+| [Denchi Atta?](projects/denchi-atta.md) | Household battery record PWA | In development | PWA, local-first app | Personal/family battery record app for checking which batteries are used at replacement time |
+| [BQ Menu](projects/bq-menu.md) | Hotel banquet menu system | Active / closed demo | Vercel, frontend app, QR menu flow | Labor-saving QR menu display system for hotel banquet venues |
+| [Hearing Aid Denchichou](projects/denchichou.md) | Care-industry hearing-aid battery PWA | In development | PWA, Firebase-related config, LP search flow | Care facility battery record app with a hearing-aid battery search LP lead-in |
 | [Shinkyu](projects/shinkyu.md) | Sales support tool | Active | Cloudflare Pages/Workers | Business tool for acupuncture clinic sales |
 | [Pack Optimizer](projects/pack-optimizer.md) | Optimization tool | Active/public | Next.js, Python, Vercel | Public repo, currently operated on Vercel |
 
