@@ -4,7 +4,7 @@
 
 BQ Menu is a labor-saving menu display system for hotel banquet venues. Guests or staff scan a QR code to view a PDF menu for a banquet or event, reducing the need for printed materials and manual explanation.
 
-It supports venue-specific time settings for each banquet room and uses a simple UI so staff can handle sudden menu changes on site. The project is currently operated as a closed sales-demo environment rather than a fully public product.
+It supports venue-specific time settings for each banquet room and uses a simple UI so staff can handle sudden menu changes on site. The project is currently operated as a private sales-demo environment rather than a fully public product.
 
 ## Role
 
@@ -30,7 +30,7 @@ It supports venue-specific time settings for each banquet room and uses a simple
 
 ## Notes
 
-The project is operated in a closed/demo context for business discussions with potential customers. Source code and live access are not broadly public, but the project is useful as an example of a focused operational tool for hospitality workflows.
+The project is operated in a private demo context for business discussions with potential customers. Source code and live access are not broadly public, but the project is useful as an example of a focused operational tool for hospitality workflows.
 
 ## What This Demonstrates
 
