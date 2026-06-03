@@ -17,9 +17,13 @@ The related landing page is included inside the Nortelia LP. That LP includes a 
 
 ## Stack
 
-- Local-first PWA architecture
-- Firebase-related configuration
-- Modern frontend development
+- React
+- TypeScript
+- Vite
+- React Router
+- Dexie
+- Firebase
+- vite-plugin-pwa
 - LP-integrated hearing-aid battery search flow
 
 ## LP Relationship

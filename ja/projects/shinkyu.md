@@ -13,8 +13,15 @@ Shinkyuは、鍼灸治療院向けの営業支援ツールです。
 
 ## 技術スタック
 
-- Cloudflare Pages/Workers
-- Modern frontend stack
+- Next.js
+- React
+- TypeScript
+- Supabase
+- Anthropic SDK
+- Tailwind CSS
+- Cloudflare Pages
+- @cloudflare/next-on-pages
+- Wrangler
 
 ## 伝えられること
 

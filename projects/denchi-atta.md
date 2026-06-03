@@ -17,8 +17,13 @@ The product is separate from Hearing Aid Denchichou. Denchi Atta? is focused on 
 ## Stack
 
 - PWA
-- Local-first app direction
-- Modern frontend development
+- React
+- TypeScript
+- Vite
+- React Router
+- Dexie
+- Firebase
+- vite-plugin-pwa
 
 ## Use Case
 

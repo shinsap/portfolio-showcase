@@ -18,7 +18,9 @@ It also includes the landing page for Hearing Aid Denchichou. That LP includes a
 
 ## Stack
 
-- Modern frontend stack
+- Astro
+- Tailwind CSS
+- @astrojs/sitemap
 - GitHub Actions build check
 - Gitleaks workflow for secret scanning
 

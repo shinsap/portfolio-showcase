@@ -8,7 +8,7 @@ This repository is a public portfolio index for selected projects. Most producti
 
 ## Profile
 
-I build small to mid-sized web products and operational tools from planning to deployment. Recent work focuses on AI-assisted development, rapid prototyping, local-first apps, landing pages, admin tools, and service workflows using modern web stacks.
+I build small to mid-sized web products and operational tools from planning to deployment. As an independent developer, I use AI-assisted development for rapid prototyping, local-first apps, landing pages, admin tools, and service workflows using modern web stacks.
 
 ## Development Style
 
@@ -21,14 +21,14 @@ I build small to mid-sized web products and operational tools from planning to d
 
 | Project | Type | Status | Stack | Notes |
 |---|---|---|---|---|
-| [Rescue Cat Card v4](projects/rescuecat-v4.md) | Emergency pet-care service | Launched / active | React, TypeScript, Supabase, Cloudflare Pages | Production operation with staging validation, security cleanup, workflow review |
+| [Rescue Cat Card v4](projects/rescuecat-v4.md) | Emergency pet-care service | Launched / active | React, React Router v7, TypeScript, Vite, Tailwind CSS, Supabase, Stripe, Cloudflare Pages/Workers | Launched service where a third party can scan an NFC/QR card and access cat-protection information when the owner cannot respond due to an accident, disaster, or similar situation |
 | [Rescue Cat Card LP](projects/rescuecat-lp.md) | Landing page | Active | Modern frontend, Cloudflare/Vercel-oriented deployment | Public acquisition and explanation page for Rescue Cat Card |
-| [Nortelia LP](projects/nortelia-lp.md) | Landing page | Active | React/modern frontend | Public-facing marketing/brand page, including the Hearing Aid Denchichou LP |
-| [Denchi Atta?](projects/denchi-atta.md) | Household battery record PWA | In development | PWA, local-first app | Personal/family battery record app for checking which batteries are used at replacement time |
-| [BQ Menu](projects/bq-menu.md) | Hotel banquet menu system | Active / closed demo | Vercel, frontend app, QR menu flow | Labor-saving QR menu display system for hotel banquet venues |
-| [Hearing Aid Denchichou](projects/denchichou.md) | Care-industry hearing-aid battery PWA | In development | PWA, Firebase-related config, LP search flow | Care facility battery record app with a hearing-aid battery search LP lead-in |
-| [Shinkyu](projects/shinkyu.md) | Sales support tool | Active | Cloudflare Pages/Workers | Business tool for acupuncture clinic sales |
-| [Pack Optimizer](projects/pack-optimizer.md) | Optimization tool | Active/public | Next.js, Python, Vercel | Public repo, currently operated on Vercel |
+| [Nortelia LP](projects/nortelia-lp.md) | Landing page | Active | Astro, Tailwind CSS | Public-facing marketing/brand page, including the Hearing Aid Denchichou LP |
+| [Denchi Atta?](projects/denchi-atta.md) | Household battery record PWA | In development | React, TypeScript, Vite, React Router, Dexie, Firebase, PWA | Personal/family battery record app for checking which batteries are used at replacement time |
+| [BQ Menu](projects/bq-menu.md) | Hotel banquet menu system | Active / closed demo | React, TypeScript, Vite, Tailwind CSS, Supabase, Vercel | QR-based PDF menu display system with venue-specific time settings and quick menu update support |
+| [Hearing Aid Denchichou](projects/denchichou.md) | Care-industry hearing-aid battery PWA | In development | React, TypeScript, Vite, React Router, Dexie, Firebase, PWA | Care facility battery record app with a hearing-aid battery search LP lead-in |
+| [Shinkyu](projects/shinkyu.md) | Sales support tool | Active | Next.js, React, TypeScript, Supabase, Anthropic SDK, Cloudflare Pages | Business tool for acupuncture clinic sales |
+| [Pack Optimizer](projects/pack-optimizer.md) | Optimization tool | Active/public | Next.js, React, TypeScript, Tailwind CSS, Vercel | Public repo for fixed-count pack planning for variable-weight products |
 
 ## AI Tool Usage
 

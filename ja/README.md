@@ -10,7 +10,7 @@ English version: [../README.md](../README.md)
 
 ## プロフィール
 
-小規模から中規模のWebプロダクト、業務支援ツール、LP、デモアプリを、企画から実装・運用整理まで行っています。近年はAI支援開発を活用しながら、プロトタイピング、local-firstアプリ、管理ツール、サービス導線の実装に取り組んでいます。
+小規模から中規模のWebプロダクト、業務支援ツール、LP、デモアプリを、企画から実装・運用整理まで行っています。個人でAI支援開発を活用しながら、プロトタイピング、local-firstアプリ、管理ツール、サービス導線の実装に取り組んでいます。
 
 ## 開発スタイル
 
@@ -23,14 +23,14 @@ English version: [../README.md](../README.md)
 
 | Project | Type | Status | Stack | Notes |
 |---|---|---|---|---|
-| [Rescue Cat Card v4](projects/rescuecat-v4.md) | 緊急時ペット保護サービス | ローンチ済み / 稼働中 | React, TypeScript, Supabase, Cloudflare Pages | staging検証付きの運用、security cleanup、workflow整理 |
+| [Rescue Cat Card v4](projects/rescuecat-v4.md) | 緊急時ペット保護サービス | ローンチ済み / 稼働中 | React, React Router v7, TypeScript, Vite, Tailwind CSS, Supabase, Stripe, Cloudflare Pages/Workers | 飼い主が事故や災害などで対応できない状況でも、第三者がNFC/QRカードから猫の保護情報へアクセスできるサービス |
 | [Rescue Cat Card LP](projects/rescuecat-lp.md) | ランディングページ | 稼働中 | Modern frontend, Cloudflare/Vercel向けデプロイ | Rescue Cat Cardの認知・説明・導線を担う公開ページ |
-| [Nortelia LP](projects/nortelia-lp.md) | ランディングページ | 稼働中 | React/modern frontend | 公開向けのブランド/サービスページ。補聴器でんち帳LPも内包 |
-| [電池あった？](projects/denchi-atta.md) | 家庭向け電池記録PWA | 開発中 | PWA, local-first app | 個人・家庭内の電池を記録し、交換時にどの電池を使うか確認するアプリ |
-| [BQ Menu](projects/bq-menu.md) | ホテル宴会場向け省力化システム | 稼働中 / クローズドデモ | Vercel, frontend app, QR menu flow | QRを読み込むとメニューが表示される宴会場向けシステム |
-| [補聴器でんち帳](projects/denchichou.md) | 介護業界向け補聴器電池記録PWA | 開発中 | PWA, Firebase関連設定, LP検索導線 | 施設利用者等の補聴器電池を記録し、検索LPからアプリへつなぐ導線を持つ |
-| [Shinkyu](projects/shinkyu.md) | 営業支援ツール | 稼働中 | Cloudflare Pages/Workers | 鍼灸治療院向け営業ツール |
-| [Pack Optimizer](projects/pack-optimizer.md) | 最適化ツール | 稼働中/public | Next.js, Python, Vercel | public repo、現在はVercelで運用 |
+| [Nortelia LP](projects/nortelia-lp.md) | ランディングページ | 稼働中 | Astro, Tailwind CSS | 公開向けのブランド/サービスページ。補聴器でんち帳LPも内包 |
+| [電池あった？](projects/denchi-atta.md) | 家庭向け電池記録PWA | 開発中 | React, TypeScript, Vite, React Router, Dexie, Firebase, PWA | 個人・家庭内の電池を記録し、交換時にどの電池を使うか確認するアプリ |
+| [BQ Menu](projects/bq-menu.md) | ホテル宴会場向け省力化システム | 稼働中 / クローズドデモ | React, TypeScript, Vite, Tailwind CSS, Supabase, Vercel | QRを読み込むと宴会・イベント用PDFメニューが表示され、宴会場ごとの時間設定や急なメニュー変更にも対応できるシステム |
+| [補聴器でんち帳](projects/denchichou.md) | 介護業界向け補聴器電池記録PWA | 開発中 | React, TypeScript, Vite, React Router, Dexie, Firebase, PWA | 施設利用者等の補聴器電池を記録し、検索LPからアプリへつなぐ導線を持つ |
+| [Shinkyu](projects/shinkyu.md) | 営業支援ツール | 稼働中 | Next.js, React, TypeScript, Supabase, Anthropic SDK, Cloudflare Pages | 鍼灸治療院向け営業ツール |
+| [Pack Optimizer](projects/pack-optimizer.md) | 最適化ツール | 稼働中/public | Next.js, React, TypeScript, Tailwind CSS, Vercel | 不定貫商材の固定個数パック作成を支援するpublic repo |
 
 ## AIツール活用
 

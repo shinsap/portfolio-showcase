@@ -10,16 +10,21 @@ Rescue Cat Card is a launched service for emergency situations where a third par
 - Requirement organization
 - UI and user-flow design
 - Frontend implementation
-- Supabase and Cloudflare architecture planning
+- Supabase, Stripe, and Cloudflare architecture planning
 - GitHub repository and workflow maintenance
 - Staging/test operation design
 
 ## Stack
 
 - React
+- React Router v7
 - TypeScript
+- Vite
+- Tailwind CSS
 - Supabase
+- Stripe
 - Cloudflare Pages/Workers
+- Wrangler
 - GitHub Actions
 
 ## Development Operation

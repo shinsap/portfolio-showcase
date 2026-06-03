@@ -18,7 +18,9 @@ Nortelia LPは、サービスやブランドの価値を伝えるための公開
 
 ## 技術スタック
 
-- Modern frontend stack
+- Astro
+- Tailwind CSS
+- @astrojs/sitemap
 - GitHub Actions build check
 - Gitleaks workflow
 

@@ -13,8 +13,15 @@ Shinkyu is a sales support tool for acupuncture clinic-related business use.
 
 ## Stack
 
-- Cloudflare Pages/Workers
-- Modern frontend stack
+- Next.js
+- React
+- TypeScript
+- Supabase
+- Anthropic SDK
+- Tailwind CSS
+- Cloudflare Pages
+- @cloudflare/next-on-pages
+- Wrangler
 
 ## What This Demonstrates
 

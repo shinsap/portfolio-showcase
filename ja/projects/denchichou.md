@@ -17,9 +17,13 @@
 
 ## 技術スタック
 
-- Local-first PWA architecture
-- Firebase関連設定
-- Modern frontend development
+- React
+- TypeScript
+- Vite
+- React Router
+- Dexie
+- Firebase
+- vite-plugin-pwa
 - LP内の補聴器電池検索導線
 
 ## LPとの関係

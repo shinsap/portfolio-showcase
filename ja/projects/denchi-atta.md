@@ -17,8 +17,13 @@
 ## 技術スタック
 
 - PWA
-- Local-first app direction
-- Modern frontend development
+- React
+- TypeScript
+- Vite
+- React Router
+- Dexie
+- Firebase
+- vite-plugin-pwa
 
 ## 利用シーン
 

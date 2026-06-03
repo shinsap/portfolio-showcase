@@ -2,7 +2,7 @@
 
 ## Overview
 
-Pack Optimizer is a public optimization tool for creating fixed-count packs within a target weight range. It is currently operated on Vercel.
+Pack Optimizer is a public optimization tool for creating fixed-count packs of variable-weight products within a target weight range. It is currently operated on Vercel.
 
 GitHub: https://github.com/shinsap/pack-optimizer
 
@@ -10,14 +10,16 @@ GitHub: https://github.com/shinsap/pack-optimizer
 
 - Tool planning
 - Next.js frontend implementation
-- Python-based optimization API
+- Fixed-count pack optimization logic for variable-weight products
 - Vercel deployment setup
 - Repository maintenance
 
 ## Stack
 
 - Next.js
-- Python
+- React
+- TypeScript
+- Tailwind CSS
 - Vercel
 
 ## Maintenance Notes
@@ -28,4 +30,5 @@ The active Vercel deployment is connected to the `pack-optimizer` repository. Th
 
 - Small utility development
 - Public repository maintenance
-- Full-stack deployment with a frontend and Python optimization backend
+- Fixed-count pack optimization for variable-weight products
+- Vercel operation for a Next.js app
