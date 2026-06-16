@@ -2,9 +2,15 @@
 
 ## Overview
 
-Hearing Aid Denchichou is a PWA for the care industry. It is designed for recording hearing-aid battery information for care-facility residents and other facility users.
+Hearing Aid Denchichou is a PWA for the care industry. It is designed for recording hearing-aid battery information for care-facility residents and home-visit care clients.
 
-The related landing page is included inside the Nortelia LP. That LP includes a hearing-aid battery search function, which works as the public lead-in to the Hearing Aid Denchichou PWA.
+## Challenge → Solution
+
+**Problem:** Care staff working at facilities or on home visits need to check the hearing-aid battery size for each resident before every battery replacement. The battery size varies by manufacturer and model, so staff have to look it up each time or rely on handwritten notes. When staff change shifts or new staff are assigned, the information is lost.
+
+**Solution:** A name-searchable PWA where staff register each resident's hearing-aid model and battery size once, then look it up instantly by name on any subsequent visit. A sync code allows multiple staff to share the same record set without accounts or login.
+
+**Who this solves it for:** Care facility staff, home-visit care workers, and any team regularly managing hearing-aid batteries for multiple people.
 
 ## Public URL
 
@@ -26,19 +32,22 @@ The related landing page is included inside the Nortelia LP. That LP includes a 
 - TypeScript
 - Vite
 - React Router
-- Dexie
-- Firebase
-- vite-plugin-pwa
-- LP-integrated hearing-aid battery search flow
+- Dexie (IndexedDB)
+- Firebase Firestore
+- vite-plugin-pwa (Service Worker)
+- Tailwind CSS
+- Vercel
 
 ## LP Relationship
 
-The LP is not just a generic landing page. It allows users to search hearing-aid battery sizes and then routes them toward the Hearing Aid Denchichou app for ongoing record management.
+The LP is not just a generic landing page. It allows users to search hearing-aid battery sizes by model number (covering 343 models across 13 domestic manufacturers), and then routes them toward the Hearing Aid Denchichou app for ongoing record management.
+
+The LP functions as an SEO content tool targeting long-tail searches from care workers who know the model but not the battery size.
 
 ## What This Demonstrates
 
 - Care-industry operational tool design
 - Hearing-aid battery record workflow modeling
-- Offline/local-first thinking
-- Practical workflow modeling for repeated daily work
+- Offline/local-first thinking with IndexedDB + Firebase sync
 - LP-to-app service funnel design
+- SEO content strategy integrated into a service lead funnel
