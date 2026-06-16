@@ -4,6 +4,14 @@
 
 Rescue Cat Card is a launched service for emergency situations where a third party can scan an NFC/QR card and access information needed to protect a cat when the owner is unable to respond.
 
+## Challenge → Solution
+
+**Problem:** When a cat owner suddenly collapses, is hospitalized, or is in a disaster, there is no way for a third party to know what the cat needs — feeding schedule, medication, emergency contacts, or where to take it.
+
+**Solution:** A physical NFC/QR card linked to a web profile. Scanning the card opens the cat's information instantly, no app install required. The card is purchased through Stripe, registered through a Supabase-backed web app, and displays correctly even for users with no account.
+
+**Who this solves it for:** Cat owners living alone, elderly owners, or anyone who wants a safety net for their pet in a worst-case scenario.
+
 ## Public URL
 
 - App: https://app.rescuecat.jp/
@@ -52,7 +60,8 @@ Repository inventory and cleanup included:
 
 ## What This Demonstrates
 
+- Physical product + digital service end-to-end (NFC card → Stripe purchase → Supabase profile → scan display)
 - AI-assisted implementation with human operational review
-- staging-oriented release discipline
-- repository security hygiene
-- practical handling of old code and service credentials
+- Staging-oriented release discipline
+- Repository security hygiene
+- Practical handling of old code and service credentials
