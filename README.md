@@ -8,7 +8,19 @@ This repository is a public portfolio index for selected projects. Most producti
 
 ## Profile
 
-I build small to mid-sized web products and operational tools from planning to deployment. As an independent developer, I use AI-assisted development for rapid prototyping, local-first apps, landing pages, admin tools, and service workflows using modern web stacks.
+I build small to mid-sized web products and operational tools from planning to deployment. As an independent developer based in Sapporo, Hokkaido, I use AI-assisted development for rapid prototyping, local-first apps, landing pages, admin tools, and service workflows using modern web stacks.
+
+## What I Build
+
+These are the kinds of problems I solve — not an abstract list of skills, but the actual scenarios my products address:
+
+- **Small business operators (5–30 staff)** who want to replace a manual daily task with a lightweight web tool, without a large system budget
+- **Service owners** who need a landing page + payment flow launched quickly, without WordPress or a full CMS
+- **Care facility teams** that need a shared lookup tool staff can open on a phone with no login
+- **Producers or processors** with a domain-specific optimization problem (e.g., fixed-weight pack planning) that is too small for enterprise software
+- **Information tool + SEO funnels** where a search-facing content site leads users toward an app or service
+
+My own products are the primary proof of this: every project below started as a real problem, was designed around the actual workflow, and is running in production.
 
 ## Development Style
 
@@ -19,16 +31,16 @@ I build small to mid-sized web products and operational tools from planning to d
 
 ## Selected Projects
 
-| Project | Type | Status | Public URL | Stack | Notes |
+| Project | Type | Status | Public URL | Stack | Challenge Solved |
 |---|---|---|---|---|---|
-| [Rescue Cat Card v4](projects/rescuecat-v4.md) | Emergency pet-care service | Launched / active | [App](https://app.rescuecat.jp/) | React, React Router v7, TypeScript, Vite, Tailwind CSS, Supabase, Stripe, Cloudflare Pages/Workers | Launched service where a third party can scan an NFC/QR card and access cat-protection information when the owner cannot respond due to an accident, disaster, or similar situation |
-| [Rescue Cat Card LP](projects/rescuecat-lp.md) | Landing page | Active | [LP](https://rescuecat.jp/) | Modern frontend, Cloudflare/Vercel-oriented deployment | Public acquisition and explanation page for Rescue Cat Card |
-| [Nortelia LP](projects/nortelia-lp.md) | Landing page | Active | [LP](https://nortelia.co.jp) | Astro, Tailwind CSS | Public-facing marketing/brand page, including the Hearing Aid Denchichou LP |
-| [Denchi Atta?](projects/denchi-atta.md) | Household battery record PWA | Active | [LP](https://nortelia.co.jp/apps/battery/) / [App](https://app.nortelia.co.jp/) | React, TypeScript, Vite, React Router, Dexie, Firebase, PWA | Personal/family battery record app for checking which batteries are used at replacement time |
-| [BQ Menu](projects/bq-menu.md) | Hotel banquet menu system | Active / private demo | Private demo | React, TypeScript, Vite, Tailwind CSS, Supabase, Vercel | QR-based PDF menu display system with venue-specific time settings and quick menu update support |
-| [Hearing Aid Denchichou](projects/denchichou.md) | Care-industry hearing-aid battery PWA | Active | [LP](https://nortelia.co.jp/apps/denchichou/) / [App](https://denchichou.nortelia.co.jp/) | React, TypeScript, Vite, React Router, Dexie, Firebase, PWA | Care facility battery record app with a hearing-aid battery search LP lead-in |
-| [Shinkyu](projects/shinkyu.md) | Sales support tool | Active / private use | Private operation | Next.js, React, TypeScript, Supabase, Anthropic SDK, Cloudflare Pages | Business tool for acupuncture clinic sales |
-| [Pack Optimizer](projects/pack-optimizer.md) | Optimization tool | Active | [App](https://pack-optimizer.vercel.app/) | Next.js, React, TypeScript, Tailwind CSS, Vercel | Public repo for fixed-count pack planning for variable-weight products |
+| [Rescue Cat Card v4](projects/rescuecat-v4.md) | Emergency pet-care service | Launched / active | [App](https://app.rescuecat.jp/) | React, React Router v7, TypeScript, Vite, Tailwind CSS, Supabase, Stripe, Cloudflare Pages/Workers | No way for a third party to access cat care info when owner collapses → NFC/QR card + Stripe + Supabase web app |
+| [Rescue Cat Card LP](projects/rescuecat-lp.md) | Landing page | Active | [LP](https://rescuecat.jp/) | Astro, TypeScript, Tailwind CSS, Cloudflare Pages, Stripe Payment Link | Story-driven LP that converts visitors with no prior knowledge into Stripe purchasers |
+| [Nortelia LP](projects/nortelia-lp.md) | Corporate site | Active | [LP](https://nortelia.co.jp) | Astro, TypeScript, Tailwind CSS, Cloudflare Pages | Company portfolio site including hearing-aid battery LP and SEO content tools |
+| [Denchi Atta?](projects/denchi-atta.md) | Household battery record PWA | Active | [LP](https://nortelia.co.jp/apps/battery/) / [App](https://app.nortelia.co.jp/) | React, TypeScript, Vite, Dexie, Firebase, PWA | Can't remember which battery each home device uses → no-login PWA with family sync |
+| [Hearing Aid Denchichou](projects/denchichou.md) | Care-industry battery PWA | Active | [LP](https://nortelia.co.jp/apps/denchichou/) / [App](https://denchichou.nortelia.co.jp/) | React, TypeScript, Vite, Dexie, Firebase, PWA | Care staff look up resident hearing-aid battery sizes repeatedly with no shared record → name-search PWA with staff sync code |
+| [Pack Optimizer](projects/pack-optimizer.md) | Optimization tool | Active | [App](https://pack-optimizer.vercel.app/) | Next.js, React, TypeScript, Tailwind CSS, Vercel | Seafood processors calculating fixed-weight pack combinations by hand → algorithm auto-calculates optimal combination |
+| [BQ Menu](projects/bq-menu.md) | Hotel banquet menu system | Active / private demo | Private demo | React, TypeScript, Vite, Tailwind CSS, Supabase, Vercel | QR-based PDF menu system with venue-specific time settings |
+| [Shinkyu](projects/shinkyu.md) | Sales support tool | Active / private use | Private operation | Next.js, React, TypeScript, Supabase, Anthropic SDK, Cloudflare Pages | AI-assisted sales support tool for acupuncture clinic operations |
 
 ## AI Tool Usage
 
