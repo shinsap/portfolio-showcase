@@ -6,6 +6,14 @@ Pack Optimizer is a public optimization tool for creating fixed-count packs of v
 
 GitHub: https://github.com/shinsap/pack-optimizer
 
+## Challenge → Solution
+
+**Problem:** Seafood processors creating fixed-weight packs (e.g., "200g packs") from variable-weight individual pieces calculate combinations by hand. The process is time-consuming and produces excess waste when combinations are not optimal.
+
+**Solution:** A web tool where the operator enters individual piece weights and target pack weight. The tool automatically calculates the optimal combination with minimum waste using an optimization algorithm. The interface is simple enough for production-floor use with no technical knowledge required.
+
+**Who this solves it for:** Small to mid-sized seafood processors, agricultural producers, and any business creating fixed-weight product packs from variable-weight raw materials.
+
 ## Public URL
 
 - App: https://pack-optimizer.vercel.app/
@@ -14,7 +22,7 @@ GitHub: https://github.com/shinsap/pack-optimizer
 
 - Tool planning
 - Next.js frontend implementation
-- Fixed-count pack optimization logic for variable-weight products
+- Fixed-count pack optimization algorithm design
 - Vercel deployment setup
 - Repository maintenance
 
@@ -26,13 +34,9 @@ GitHub: https://github.com/shinsap/pack-optimizer
 - Tailwind CSS
 - Vercel
 
-## Maintenance Notes
-
-The active Vercel deployment is connected to the `pack-optimizer` repository. The older `kombu` repository is no longer the active public project and has been moved out of the portfolio.
-
 ## What This Demonstrates
 
-- Small utility development
-- Public repository maintenance
-- Fixed-count pack optimization for variable-weight products
-- Vercel operation for a Next.js app
+- Domain-specific optimization tool development
+- Simple, production-floor-oriented UX design
+- Small utility development with public deployment
+- Fixed-count pack optimization logic for variable-weight products
