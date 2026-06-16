@@ -10,7 +10,19 @@ English version: [../README.md](../README.md)
 
 ## プロフィール
 
-小規模から中規模のWebプロダクト、業務支援ツール、LP、デモアプリを、企画から実装・運用整理まで行っています。個人でAI支援開発を活用しながら、プロトタイピング、local-firstアプリ、管理ツール、サービス導線の実装に取り組んでいます。
+小規模から中規模のWebプロダクト、業務支援ツール、LP、デモアプリを、企画から実装・運用整理まで行っています。北海道札幌市を拠点に、AI支援開発を活用しながらプロトタイピング、local-firstアプリ、管理ツール、サービス導線の実装に取り組んでいます。
+
+## こんな依頼に対応できます
+
+スキルの抽象的な列挙ではなく、実際に自社プロダクトで解決してきた課題の類型です。
+
+- **従業員5〜30名の中小企業・個人事業主**で、手作業で行っている日常業務をWebツールに置き換えたい
+- **LP＋決済フロー**を小予算・短期間で立ち上げたい（WordPress不要）
+- **介護・医療・福祉分野**など、スタッフがスマホからログインなしで使える共有ツールが必要
+- **農水産加工など業界特有の計算・最適化**を自動化したい（小規模すぎて既製ソフトが合わない）
+- **SEOコンテンツサイト＋アプリへの誘導導線**として、検索からサービスへつなぐファネルを作りたい
+
+すべての自社プロダクトは実際の課題から生まれ、業務フローに合わせて設計し、現在も本番運用中です。
 
 ## 開発スタイル
 
@@ -21,16 +33,16 @@ English version: [../README.md](../README.md)
 
 ## 主なプロジェクト
 
-| Project | Type | Status | Public URL | Stack | Notes |
+| Project | Type | Status | Public URL | Stack | 解決した課題 |
 |---|---|---|---|---|---|
-| [Rescue Cat Card v4](projects/rescuecat-v4.md) | 緊急時ペット保護サービス | ローンチ済み / 稼働中 | [App](https://app.rescuecat.jp/) | React, React Router v7, TypeScript, Vite, Tailwind CSS, Supabase, Stripe, Cloudflare Pages/Workers | 飼い主が事故や災害などで対応できない状況でも、第三者がNFC/QRカードから猫の保護情報へアクセスできるサービス |
-| [Rescue Cat Card LP](projects/rescuecat-lp.md) | ランディングページ | 稼働中 | [LP](https://rescuecat.jp/) | Modern frontend, Cloudflare/Vercel向けデプロイ | Rescue Cat Cardの認知・説明・導線を担う公開ページ |
-| [Nortelia LP](projects/nortelia-lp.md) | ランディングページ | 稼働中 | [LP](https://nortelia.co.jp) | Astro, Tailwind CSS | 公開向けのブランド/サービスページ。補聴器でんち帳LPも内包 |
-| [電池あった？](projects/denchi-atta.md) | 家庭向け電池記録PWA | 稼働中 | [LP](https://nortelia.co.jp/apps/battery/) / [App](https://app.nortelia.co.jp/) | React, TypeScript, Vite, React Router, Dexie, Firebase, PWA | 個人・家庭内の電池を記録し、交換時にどの電池を使うか確認するアプリ |
-| [BQ Menu](projects/bq-menu.md) | ホテル宴会場向け省力化システム | 稼働中 / 非公開デモ | 非公開デモ | React, TypeScript, Vite, Tailwind CSS, Supabase, Vercel | QRを読み込むと宴会・イベント用PDFメニューが表示され、宴会場ごとの時間設定や急なメニュー変更にも対応できるシステム |
-| [補聴器でんち帳](projects/denchichou.md) | 介護業界向け補聴器電池記録PWA | 稼働中 | [LP](https://nortelia.co.jp/apps/denchichou/) / [App](https://denchichou.nortelia.co.jp/) | React, TypeScript, Vite, React Router, Dexie, Firebase, PWA | 施設利用者等の補聴器電池を記録し、検索LPからアプリへつなぐ導線を持つ |
-| [Shinkyu](projects/shinkyu.md) | 営業支援ツール | 稼働中 / 非公開運用 | private運用 | Next.js, React, TypeScript, Supabase, Anthropic SDK, Cloudflare Pages | 鍼灸治療院向け営業ツール |
-| [Pack Optimizer](projects/pack-optimizer.md) | 最適化ツール | 稼働中 | [App](https://pack-optimizer.vercel.app/) | Next.js, React, TypeScript, Tailwind CSS, Vercel | 不定貫商材の固定個数パック作成を支援するpublic repo |
+| [Rescue Cat Card v4](projects/rescuecat-v4.md) | 緊急時ペット保護サービス | ローンチ済み / 稼働中 | [App](https://app.rescuecat.jp/) | React, React Router v7, TypeScript, Vite, Tailwind CSS, Supabase, Stripe, Cloudflare Pages/Workers | 飼い主が倒れた時に第三者が猫の情報を知る手段がなかった → NFC/QRカード＋Stripe＋Supabase |
+| [Rescue Cat Card LP](projects/rescuecat-lp.md) | ランディングページ | 稼働中 | [LP](https://rescuecat.jp/) | Astro, TypeScript, Tailwind CSS, Cloudflare Pages, Stripe Payment Link | 抽象的な価値を持つサービスをストーリーで伝えStripe購入に誘導するLP |
+| [Nortelia LP](projects/nortelia-lp.md) | コーポレートサイト | 稼働中 | [LP](https://nortelia.co.jp) | Astro, TypeScript, Tailwind CSS, Cloudflare Pages | 補聴器でんち帳LPとSEOコンテンツツールを内包するブランドサイト |
+| [電池あった？](projects/denchi-atta.md) | 家庭向け電池記録PWA | 稼働中 | [LP](https://nortelia.co.jp/apps/battery/) / [App](https://app.nortelia.co.jp/) | React, TypeScript, Vite, Dexie, Firebase, PWA | どの機器にどの電池か毎回わからない → ログイン不要PWAで家族間同期 |
+| [補聴器でんち帳](projects/denchichou.md) | 介護業界向け補聴器電池記録PWA | 稼働中 | [LP](https://nortelia.co.jp/apps/denchichou/) / [App](https://denchichou.nortelia.co.jp/) | React, TypeScript, Vite, Dexie, Firebase, PWA | 介護スタッフが利用者ごとの電池サイズを毎回確認・引き継ぎ断絶 → 名前検索＋スタッフ同期コード |
+| [Pack Optimizer](projects/pack-optimizer.md) | 最適化ツール | 稼働中 | [App](https://pack-optimizer.vercel.app/) | Next.js, React, TypeScript, Tailwind CSS, Vercel | 水産加工業者が定量パック組み合わせを手計算 → アルゴリズムで自動最適化 |
+| [BQ Menu](projects/bq-menu.md) | ホテル宴会場向け省力化システム | 稼働中 / 非公開デモ | 非公開デモ | React, TypeScript, Vite, Tailwind CSS, Supabase, Vercel | QRでPDFメニューを表示、宴会場ごとの時間設定・急なメニュー変更に対応 |
+| [Shinkyu](projects/shinkyu.md) | 営業支援ツール | 稼働中 / 非公開運用 | private運用 | Next.js, React, TypeScript, Supabase, Anthropic SDK, Cloudflare Pages | 鍼灸治療院向けAI支援営業ツール |
 
 ## AIツール活用
 
