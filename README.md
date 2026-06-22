@@ -41,6 +41,7 @@ My own products are the primary proof of this: every project below started as a 
 | [Pack Optimizer](projects/pack-optimizer.md) | Optimization tool | Active | [App](https://pack-optimizer.vercel.app/) | Next.js, React, TypeScript, Tailwind CSS, Vercel | Seafood processors calculating fixed-weight pack combinations by hand → algorithm auto-calculates optimal combination |
 | [BQ Menu](projects/bq-menu.md) | Hotel banquet menu system | Active / private demo | Private demo | React, TypeScript, Vite, Tailwind CSS, Supabase, Vercel | QR-based PDF menu system with venue-specific time settings |
 | [Shinkyu](projects/shinkyu.md) | Sales support tool | Active / private use | Private operation | Next.js, React, TypeScript, Supabase, Anthropic SDK, Cloudflare Pages | AI-assisted sales support tool for acupuncture clinic operations |
+| [外注前ナビ](projects/gaichu.md) | SMB outsourcing decision tool | Active | [App](https://gaichu.nortelia.co.jp) | Astro, React, TypeScript, Tailwind CSS v4, Cloudflare Pages, Cloudflare Pages Functions, Gemini 2.5 Flash-Lite, Turnstile, Zod | Diagnostic tool that helps SMBs decide whether to build in-house, outsource, or use existing SaaS — client-side rule engine with AI used only for output formatting |
 
 ## AI Tool Usage
 

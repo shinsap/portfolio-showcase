@@ -43,6 +43,7 @@ English version: [../README.md](../README.md)
 | [Pack Optimizer](projects/pack-optimizer.md) | 最適化ツール | 稼働中 | [App](https://pack-optimizer.vercel.app/) | Next.js, React, TypeScript, Tailwind CSS, Vercel | 水産加工業者が定量パック組み合わせを手計算 → アルゴリズムで自動最適化 |
 | [BQ Menu](projects/bq-menu.md) | ホテル宴会場向け省力化システム | 稼働中 / 非公開デモ | 非公開デモ | React, TypeScript, Vite, Tailwind CSS, Supabase, Vercel | QRでPDFメニューを表示、宴会場ごとの時間設定・急なメニュー変更に対応 |
 | [Shinkyu](projects/shinkyu.md) | 営業支援ツール | 稼働中 / 非公開運用 | private運用 | Next.js, React, TypeScript, Supabase, Anthropic SDK, Cloudflare Pages | 鍼灸治療院向けAI支援営業ツール |
+| [外注前ナビ](projects/gaichu.md) | 中小企業向け外注前診断ツール | 稼働中 | [App](https://gaichu.nortelia.co.jp) | Astro, React, TypeScript, Tailwind CSS v4, Cloudflare Pages, Cloudflare Pages Functions, Gemini 2.5 Flash-Lite, Turnstile, Zod | 「作らない・内製する・外注する」をQ&A形式で整理する診断サービス。診断ロジックはクライアント完結、AIは出力整形のみ |
 
 ## AIツール活用
 
