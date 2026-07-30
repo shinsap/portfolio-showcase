@@ -35,8 +35,8 @@ English version: [../README.md](../README.md)
 
 | Project | Type | Status | Public URL | Stack | 解決した課題 |
 |---|---|---|---|---|---|
-| [Rescue Cat Card v4](projects/rescuecat-v4.md) | 緊急時ペット保護サービス | ローンチ済み / 稼働中 | [App](https://app.rescuecat.jp/) | React, React Router v7, TypeScript, Vite, Tailwind CSS, Supabase, Stripe, Cloudflare Pages/Workers | 飼い主が倒れた時に第三者が猫の情報を知る手段がなかった → NFC/QRカード＋Stripe＋Supabase |
-| [Rescue Cat Card LP](projects/rescuecat-lp.md) | ランディングページ | 稼働中 | [LP](https://rescuecat.jp/) | Astro, TypeScript, Tailwind CSS, Cloudflare Pages, Stripe Payment Link | 抽象的な価値を持つサービスをストーリーで伝えStripe購入に誘導するLP |
+| [Rescue Pet Card](projects/rescuecat-v4.md)（旧Rescue Cat Card v4） | 緊急時ペット保護サービス | ローンチ済み / 稼働中 | [App](https://app.rescuepet.jp/) | React, React Router v7, TypeScript, Vite, Tailwind CSS, Supabase, Stripe, Cloudflare Pages/Workers | 飼い主が倒れた時に第三者が猫・犬の情報を知る手段がなかった → NFC/QRカード＋Stripe＋Supabase。2026年7月に猫専用から猫犬両対応へリブランドし、購入前プレビュー方式へフロー刷新 |
+| [Rescue Pet Card LP](projects/rescuecat-lp.md)（旧Rescue Cat Card LP） | ランディングページ | 稼働中 | [LP](https://rescuepet.jp/) | Astro, TypeScript, Tailwind CSS, Cloudflare Pages | 抽象的な価値を持つサービスをストーリーで伝え、Stripe直接購入ではなくアプリの無料プレビュー登録へ誘導するLP |
 | [Nortelia LP](projects/nortelia-lp.md) | コーポレートサイト | 稼働中 | [LP](https://nortelia.co.jp) | Astro, TypeScript, Tailwind CSS, Cloudflare Pages | 補聴器でんち帳LPとSEOコンテンツツールを内包するブランドサイト |
 | [電池あった？](projects/denchi-atta.md) | 家庭向け電池記録PWA | 稼働中 | [LP](https://nortelia.co.jp/apps/battery/) / [App](https://app.nortelia.co.jp/) | React, TypeScript, Vite, Dexie, Firebase, PWA | どの機器にどの電池か毎回わからない → ログイン不要PWAで家族間同期 |
 | [補聴器でんち帳](projects/denchichou.md) | 介護業界向け補聴器電池記録PWA | 稼働中 | [LP](https://nortelia.co.jp/apps/denchichou/) / [App](https://denchichou.nortelia.co.jp/) | React, TypeScript, Vite, Dexie, Firebase, PWA | 介護スタッフが利用者ごとの電池サイズを毎回確認・引き継ぎ断絶 → 名前検索＋スタッフ同期コード |
