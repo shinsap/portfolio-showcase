@@ -41,7 +41,8 @@ English version: [../README.md](../README.md)
 | [電池あった？](projects/denchi-atta.md) | 家庭向け電池記録PWA | 稼働中 | [LP](https://nortelia.co.jp/apps/battery/) / [App](https://app.nortelia.co.jp/) | React, TypeScript, Vite, Dexie, Firebase, PWA | どの機器にどの電池か毎回わからない → ログイン不要PWAで家族間同期 |
 | [補聴器でんち帳](projects/denchichou.md) | 介護業界向け補聴器電池記録PWA | 稼働中 | [LP](https://nortelia.co.jp/apps/denchichou/) / [App](https://denchichou.nortelia.co.jp/) | React, TypeScript, Vite, Dexie, Firebase, PWA | 介護スタッフが利用者ごとの電池サイズを毎回確認・引き継ぎ断絶 → 名前検索＋スタッフ同期コード |
 | [Pack Optimizer](projects/pack-optimizer.md) | 最適化ツール | 稼働中 | [App](https://pack-optimizer.vercel.app/) | Next.js, React, TypeScript, Tailwind CSS, Vercel | 水産加工業者が定量パック組み合わせを手計算 → アルゴリズムで自動最適化 |
-| [BQmenu](projects/bq-menu.md) | ホテル宴会向けデジタルメニュー／案内システム | MVP完成 / 非公開デモ | 非公開デモ | React, TypeScript, Vite, Tailwind CSS, Supabase, PostgreSQL, Cloudflare Pages / Workers | QRによる利用者向け案内とスタッフ向け管理画面で、紙メニュー差し替えや会場案内の手間を軽減 |
+| [BQmenu](projects/bq-menu.md) | ホテル宴会場向けB2B SaaS | MVP完成 / production稼働・初号顧客導入決定 | [App](https://app.bqmenu.com)（スタッフログイン制） | React, TypeScript, Vite, Tailwind CSS, Supabase, PostgreSQL, Cloudflare Pages / Workers | 実際のホテル現場からの業務相談を起点に、特定ホテル専用ではなくマルチテナントSaaSとして開発。固定QR・会場/時間重複チェック・自動公開タイミングで紙メニューの差し替えや会場案内の手間を軽減 |
+| [BQmenu LP](projects/bqmenu-lp.md) | ランディングページ / Go-to-Market | production稼働 | [LP](https://bqmenu.com) | Vite, React, TypeScript, Tailwind CSS, Cloudflare Pages | Source of Truthに基づき製品仕様・営業表現・パートナー資料を一致させ続けるプロセスで開発。GA4によるリード計測をproduction環境で確認済み |
 | [Shinkyu](projects/shinkyu.md) | 営業支援ツール | 稼働中 / 非公開運用 | private運用 | Next.js, React, TypeScript, Supabase, Anthropic SDK, Cloudflare Pages | 鍼灸治療院向けAI支援営業ツール |
 | [外注前ナビ](projects/gaichu.md) | 中小企業向け外注前診断ツール | 稼働中 | [App](https://gaichu.nortelia.co.jp) | Astro, React, TypeScript, Tailwind CSS v4, Cloudflare Pages, Cloudflare Pages Functions, Gemini 2.5 Flash-Lite, Turnstile, Zod | 「作らない・内製する・外注する」をQ&A形式で整理する診断サービス。診断ロジックはクライアント完結、AIは出力整形のみ |
 
