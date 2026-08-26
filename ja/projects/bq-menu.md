@@ -55,6 +55,16 @@ BQmenuの要件定義・アーキテクチャ・実装は、「AIに任せて作
 
 この方式は、[BQmenu LP](bqmenu-lp.md) 側で採用している要件駆動・レビューゲート型の開発フローと同じ考え方です。
 
+## SaaS Security Review / セキュリティ強化
+
+MVP完成後、限定的な初期導入から複数ホテルへ販売するマルチテナントSaaSへ移行するタイミングで、ホテル運営を扱うproductionシステムとして脅威モデルを見直し、Security Reviewを実施しました。
+
+対象は、テナント分離、認証・認可、DBレベルのアクセス制御、private file管理、public/private境界、upload/delete経路、secret露出、legacy環境のcontainment、インフラ管理権限、緊急時運用です。Frontendだけをsecurity boundaryとせず、server-side enforcementを中心に確認しました。
+
+Security Reviewの指摘を機械的に実装するのではなく、脅威の現実性、exploitability、impact、既存防御、UX、実装コスト、運用負荷をHuman Gateで評価しました。通常のホテル業務を不必要に複雑化せず、実用的なSaaS securityを目指すためです。
+
+主要なserver-side boundaryの確認、infrastructure accountのMFA/2FA・access review、credential recoveryと緊急時運用の文書化、legacy環境のcontainmentを完了しました。レビュー完了時点で、販売開始を妨げる既知のtechnical blockerが残っていない状態まで確認し、低優先度のhardeningはpost-launch backlogとして分離しています。
+
 ## 技術スタック
 
 - React
@@ -81,6 +91,7 @@ BQmenuの要件定義・アーキテクチャ・実装は、「AIに任せて作
 - 要件定義・仕様の所有
 - ソリューション・データモデル設計（会場モデル、公開状態の状態遷移、RLSによるテナント分離）
 - AI開発オーケストレーション：実装エージェント・独立レビューエージェントへの指示と、その出力に対する採否・停止判断
+- SaaS Security Review：販売拡大前の脅威モデル再評価、対策優先度判断、Human Gate、運用面のsecurity hardening
 - production環境構築、テスト戦略、ドキュメント作成
 - Go-to-Market・営業イネーブルメント設計（[BQmenu LP](bqmenu-lp.md) 参照）
 
@@ -90,4 +101,5 @@ BQmenuの要件定義・アーキテクチャ・実装は、「AIに任せて作
 - 要件駆動・レビューゲート型のAIオーケストレーション開発（各ステップで人間が最終判断を保持）
 - 「重複をチェックする」であって「完全に防止する」ではない、という現実的な安全表現を、要件からUI・後の営業表現まで一貫させる姿勢
 - 編集機能をあえて実装しない、という意図的なスコープ判断とその理由を明示する姿勢
+- MVP完成後に脅威モデルを再評価し、security・UX・運用負荷のバランスを取りながら商用SaaSとしてのproduction readinessを判断する力
 - 要件定義からproduction環境構築までの一貫したデリバリー

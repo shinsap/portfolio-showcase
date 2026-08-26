@@ -55,6 +55,16 @@ BQmenu's requirements, architecture, and implementation were developed using a r
 
 This mirrors the same requirements-driven, review-gated approach used on the [BQmenu LP](bqmenu-lp.md) side of the project.
 
+## SaaS Security Review & Hardening
+
+After MVP completion, BQmenu moved from a limited initial deployment toward broader multi-tenant commercial rollout. That shift prompted a production security review and threat-model reassessment appropriate for a SaaS handling hotel operations.
+
+The review covered multi-tenant isolation; authentication and authorization; database-level access boundaries; private file handling; public/private content separation; upload and delete flows; secret exposure; legacy environment containment; control-plane access; and emergency operations. The emphasis was on server-side enforcement rather than treating the frontend as the security boundary.
+
+Security recommendations were not automatically implemented. Each item passed through a Human Gate that assessed realistic threat, exploitability, impact, existing mitigation, user experience, implementation cost, and operational burden. The goal was practical SaaS security without adding controls that would unnecessarily slow normal hotel operations.
+
+The review was completed with server-side boundaries reviewed, infrastructure MFA/2FA and access review completed, credential-recovery and emergency operations documented, and legacy environments contained. No known launch-blocking technical findings remained at the time of review; lower-priority hardening was separated into a post-launch backlog.
+
 ## Stack
 
 - React
@@ -81,6 +91,7 @@ This mirrors the same requirements-driven, review-gated approach used on the [BQ
 - Requirements definition and specification ownership
 - Solution and data-model design (venue model, publication state machine, RLS-based tenant isolation)
 - AI development orchestration: directing implementation and independent review agents, and making accept/reject/stop decisions on their output
+- SaaS security review ownership: threat-model reassessment, remediation prioritization, Human Gate decisions, and operational hardening before commercial rollout
 - Production setup, testing strategy, and documentation
 - Go-to-market and sales enablement design (see [BQmenu LP](bqmenu-lp.md))
 
@@ -90,4 +101,5 @@ This mirrors the same requirements-driven, review-gated approach used on the [BQ
 - Requirements-driven, review-gated AI-orchestrated development, with a human holding final judgment at every step
 - Practical, non-absolute product-safety language (overlap *checking* vs. guaranteed prevention) carried consistently from requirements into UI and later into sales copy
 - Deliberate scope control: choosing not to build an edit feature, and explaining why, rather than leaving it as an unstated gap
+- Moving a completed MVP into commercial SaaS rollout by reassessing the threat model and balancing security, UX, and operational cost rather than treating every possible hardening measure as mandatory
 - End-to-end delivery from requirements through production deployment
