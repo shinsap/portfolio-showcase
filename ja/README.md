@@ -35,6 +35,7 @@ English version: [../README.md](../README.md)
 
 | Project | Type | Status | Public URL | Stack | 解決した課題 |
 |---|---|---|---|---|---|
+| [RepoBD](../projects/repobd.md) | 開発者向けsecret transport CLI / OSS | v0.1.1公開中 | [Site](https://repobd.com) / [GitHub](https://github.com/repobd/repobd) | TypeScript, Node.js, Cloudflare Workers, D1, AES-256-GCM | API key/tokenには本来repoの文脈がない → 一回限りの暗号化deliveryを意図したGit repositoryにbindし、wrong-repo pullをsecret取得前に拒否 |
 | [Rescue Pet Card](projects/rescuecat-v4.md)（旧Rescue Cat Card v4） | 緊急時ペット保護サービス | ローンチ済み / 稼働中 | [App](https://app.rescuepet.jp/) | React, React Router v7, TypeScript, Vite, Tailwind CSS, Supabase, Stripe, Cloudflare Pages/Workers | 飼い主が倒れた時に第三者が猫・犬の情報を知る手段がなかった → NFC/QRカード＋Stripe＋Supabase。2026年7月に猫専用から猫犬両対応へリブランドし、購入前プレビュー方式へフロー刷新 |
 | [Rescue Pet Card LP](projects/rescuecat-lp.md)（旧Rescue Cat Card LP） | ランディングページ | 稼働中 | [LP](https://rescuepet.jp/) | Astro, TypeScript, Tailwind CSS, Cloudflare Pages | 抽象的な価値を持つサービスをストーリーで伝え、Stripe直接購入ではなくアプリの無料プレビュー登録へ誘導するLP |
 | [Nortelia LP](projects/nortelia-lp.md) | コーポレートサイト | 稼働中 | [LP](https://nortelia.co.jp) | Astro, TypeScript, Tailwind CSS, Cloudflare Pages | 補聴器でんち帳LPとSEOコンテンツツールを内包するブランドサイト |
