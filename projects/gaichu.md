@@ -1,10 +1,10 @@
-# 外注前ナビ (Pre-Outsourcing Navigator)
+# Pre-Outsourcing Navigator
 
 ## Overview
 
-外注前ナビ is a diagnostic web service that helps small and medium-sized business owners decide whether to build a tool in-house, outsource it, or not build it at all. Users answer a short series of category-specific questions, and the service returns a recommended approach with supporting reasoning.
+Pre-Outsourcing Navigator is a diagnostic web service that helps small and medium-sized business owners decide whether to build a tool in-house, outsource it, or not build it at all. Users answer a short series of category-specific questions, and the service returns a recommended approach with supporting reasoning.
 
-The product is designed around a common real-world gap: business owners often reach out to outsourcing vendors before clarifying what they actually need, or without considering whether existing SaaS tools already solve the problem. 外注前ナビ is a structured way to surface that clarity before any money is spent.
+The product is designed around a common real-world gap: business owners often reach out to outsourcing vendors before clarifying what they actually need, or without considering whether existing SaaS tools already solve the problem. Pre-Outsourcing Navigator is a structured way to surface that clarity before any money is spent.
 
 Phase 1.5 added result sharing, a boss communication advisor, and result screen enhancements — all without increasing AI API costs.
 
