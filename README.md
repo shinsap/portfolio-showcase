@@ -28,6 +28,7 @@ My own products are the primary proof of this: every project below started as a 
 - Use AI tools for implementation speed, but keep architecture, security, repo hygiene, and deployment decisions under human review.
 - Separate active development, staging/test, and archived repositories.
 - Keep secrets out of source code and periodically review repositories, Actions, webhooks, deploy keys, and external service links.
+- Implement AI-search discoverability with schema.org / JSON-LD, robots.txt, sitemaps, canonical metadata, AI crawler accessibility, and machine-readable product/company entity definitions.
 
 ## Selected Projects
 
