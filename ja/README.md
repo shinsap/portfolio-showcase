@@ -30,6 +30,7 @@ English version: [../README.md](../README.md)
 - AIツールで実装速度を上げつつ、設計・セキュリティ・repo整理・デプロイ判断は人間が確認する
 - 開発本線、staging/test、archive済みrepoを分けて管理する
 - secretをソースコードに入れず、Actions、webhooks、deploy keys、外部サービス連携を定期的に確認する
+- AI検索・生成AI経由のDiscoverabilityを意識し、schema.org / JSON-LD、robots.txt、sitemap、canonical、AI crawler対応、プロダクト/企業情報のmachine-readableな明示化を実装する
 
 ## 主なプロジェクト
 
