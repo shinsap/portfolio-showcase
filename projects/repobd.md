@@ -18,11 +18,13 @@ The current public release is `repobd@0.1.1`, published on npm and GitHub under 
 
 ## Challenge → Solution
 
-**Problem:** Secrets such as API keys and tokens normally carry no information about which local repository they belong to. A developer can therefore have the correct secret and still paste or apply it in the wrong terminal, repository, AI session, or teammate workflow.
+**Problem:** Secrets such as API keys and tokens normally carry no information about which local repository they belong to. A developer can therefore have the correct secret while operating in the wrong terminal, agent session, or teammate workflow. When that context mistake places them in a repository with a different canonical Git origin, the secret can be applied to the wrong codebase.
 
 **Solution:** RepoBD binds a short-lived, one-time delivery to the canonical identity of the intended Git repository. The receiver must be in a matching repository before the secret is retrieved.
 
 A wrong-repository pull is rejected before any network call for the delivery lifecycle, so the secret is not retrieved, `.env` is not modified, and the delivery remains available for the correct repository until it expires or is otherwise consumed.
+
+RepoBD deliberately stops at the repository boundary. It does not distinguish branches, environments, credential purpose, or recipients within the same repository, and it does not try to solve terminal selection or agent/session selection itself.
 
 ## Core Flow
 
@@ -71,15 +73,18 @@ RepoBD was designed around explicit security boundaries rather than broad securi
 - A delivery has a fixed 15-minute TTL.
 - A successful pull is intended to be one-time; replay after consumption is rejected.
 - `.env` writes are deliberately narrow and fail closed on ambiguous or unsupported content rather than attempting to behave as a general dotenv editor.
+- Unsupported, ambiguous, or unresolved repository identity fails closed instead of being guessed as a match.
 - Repository binding is an accidental-misuse guardrail, not cryptographic authentication.
 
-RepoBD is explicitly **not** a vault, password manager, production deployment secret store, identity system, or defense against a compromised local machine or malicious local user.
+Within the same canonical Git repository, RepoBD does **not** distinguish branch, environment, credential purpose, KEY/value meaning, or intended human recipient. It is also explicitly **not** a vault, password manager, production deployment secret store, identity system, or defense against a compromised local machine or malicious local user.
+
+The documented failure-mode boundary is available in [FAILURE_MODE_INVENTORY.md](https://github.com/repobd/repobd/blob/main/docs/FAILURE_MODE_INVENTORY.md).
 
 ## AI-Assisted Development Context
 
 AI coding agents are one use case, not the product definition.
 
-When Claude Code, Codex, or other agents are running across several repositories, humans and orchestrators can still choose the wrong terminal or session. RepoBD does not route work or select the correct agent. It adds a final repository check before secret retrieval so that a context-selection mistake does not automatically become a wrong-repository secret write.
+When Claude Code, Codex, or other agents are running across several repositories, humans and orchestrators can still choose the wrong terminal or session. RepoBD does not route work or select the correct agent. It adds a final repository check before secret retrieval so that, when the mistaken context points to a different canonical repository identity, the mistake does not automatically become a wrong-repository secret write.
 
 A practical benefit is that the raw API key does not need to be pasted directly into an AI chat. The RepoBD delivery URL is itself secret-bearing and must still be handled through a private, trusted channel.
 
