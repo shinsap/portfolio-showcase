@@ -16,6 +16,8 @@ This entry covers product development. See [BQmenu LP](bqmenu-lp.md) for the go-
 
 **Solution:** Each physical venue gets one fixed QR code. Staff register a banquet (name, guest count, staff-in-charge, venue, schedule, and a completed PDF) against that venue and time slot. BQmenu checks for double-booking on the same venue/overlapping time, and automatically switches the guest-facing screen between a before-publication state, the active menu, and an ended state based on the configured schedule — no per-event reprinting or QR reissuing required.
 
+**Who this solves it for:** Hotel and banquet-venue staff who prepare menus per venue and time slot. The same approach — turning one site's operational request into a focused, reusable product — applies to other workflows that packaged software does not cover well.
+
 ## Product Development
 
 Requirements were translated into the following core system behavior:

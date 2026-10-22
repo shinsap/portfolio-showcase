@@ -21,6 +21,8 @@ A manually convenient combination is not necessarily a globally efficient one. U
 
 The goal is therefore not simply to find a valid pack. The tool must optimize the entire available inventory.
 
+**Who this solves it for:** Small to mid-sized seafood processors and other food manufacturers that pack variable-weight items by total pack weight. The same pattern — load existing data as CSV, calculate in the browser, and hand the floor an Excel work instruction — can be adapted to other site-specific calculation or planning tasks that are currently done by hand.
+
 ## Production Design
 
 The operator uploads a CSV containing weight classes and stock quantities, enters the minimum pack weight, and runs the calculation.
