@@ -1,5 +1,7 @@
 # ポートフォリオ・ショーケース
 
+最終更新: 2026-10-29
+
 GitHub: https://github.com/shinsap
 
 English version: [../README.md](../README.md)
