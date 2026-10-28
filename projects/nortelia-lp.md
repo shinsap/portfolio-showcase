@@ -40,7 +40,7 @@ Its structure is:
 - About
 - Contact
 
-Products presented on the English site include RepoBD, BQmenu, Portion Weight Match, Pack Optimizer, and Rescue Pet Card.
+Products presented on the English site include Hit & Lock, RepoBD, BQmenu, Portion Weight Match, Pack Optimizer, and Rescue Pet Card.
 
 The site explicitly distinguishes products with English-language access from products that currently use Japanese interfaces or operate for the Japanese market.
 
@@ -49,6 +49,12 @@ The site explicitly distinguishes products with English-language access from pro
 The English BQmenu page explains a real product-development path: an actual hotel request became the starting point for a reusable B2B SaaS rather than a one-off custom system.
 
 The case study does not claim that the BQmenu product itself is already multilingual or internationally deployed.
+
+## Hit & Lock and AI-assisted Development
+
+The production site now includes Hit & Lock in the Built by Nortelia showcase and product listings. Hit & Lock is also used as a concrete AI-assisted development case study: the concept and requirements took about three hours to shape, the first playable version took roughly two more hours through an AI-assisted workflow, and UI, testing, PWA support, localization, accessibility, sharing, analytics, and production readiness were refined afterward.
+
+This case study is intentionally framed as an example of turning a small idea into a usable product quickly, not as a claim that the entire production release was completed in five hours.
 
 ## Built by Nortelia
 
