@@ -1,5 +1,7 @@
 # Portfolio Showcase
 
+Last updated: October 29, 2026
+
 GitHub: https://github.com/shinsap
 
 日本語版: [ja/README.md](ja/README.md)
