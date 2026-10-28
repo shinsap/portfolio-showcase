@@ -52,6 +52,7 @@ English version: [../README.md](../README.md)
 
 | Project | Type | Status | Public URL | Stack | 解決した課題 |
 |---|---|---|---|---|---|
+| [Hit & Lock](projects/hit-and-lock.md) | パズルPWA / AI支援開発実験 | 公開中 | [App](https://hitandlock.nortelia.co.jp/) | Vite, TypeScript, PWA, Vitest, Playwright, Cloudflare Workers | BtoB向け販促の小さな着想から開始。構想・要件整理約3時間、AI駆動で遊べる初版まで約2時間、その後テスト・日英対応・アクセシビリティ・公開品質を調整 |
 | [BQmenu](projects/bq-menu.md) | ホテル宴会場向けB2B SaaS | MVP完成 / production稼働・初号顧客導入決定 | [App](https://app.bqmenu.com)（スタッフログイン制） | React, TypeScript, Vite, Tailwind CSS, Supabase, PostgreSQL, Cloudflare Pages / Workers | 実際のホテル現場からの業務相談を起点に、特定ホテル専用ではなくマルチテナントSaaSとして開発。固定QR・会場/時間重複チェック・自動公開タイミングで紙メニューの差し替えや会場案内の手間を軽減 |
 | [切り身重量合わせ / Portion Weight Match](projects/portion-weight-match.md) | 水産・食品加工向け最適化ツール | 稼働中 | [App](https://portion-weight-match.vercel.app/) / [GitHub](https://github.com/shinsap/portion-weight-match) | Next.js, React, TypeScript, HiGHS/WASM, XLSX, Vercel | 不定貫の切り身などを最低パック重量以上になるよう組み合わせる作業を自動化。条件を満たすパック数を最大化し、総余剰重量を最小化してExcel作業指示書までブラウザ内で出力 |
 | [Rescue Pet Card](projects/rescuecat-v4.md)（旧Rescue Cat Card v4） | 緊急時ペット保護サービス | ローンチ済み / 稼働中 | [App](https://app.rescuepet.jp/) | React, React Router v7, TypeScript, Vite, Tailwind CSS, Supabase, Stripe, Cloudflare Pages/Workers | 飼い主が倒れた時に第三者が猫・犬の情報を知る手段がなかった → NFC/QRカード＋Stripe＋Supabase。2026年7月に猫専用から猫犬両対応へリブランドし、購入前プレビュー方式へフロー刷新 |
