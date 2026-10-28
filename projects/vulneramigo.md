@@ -4,7 +4,7 @@
 
 Vulneramigo is a lightweight web app (PWA) that turns vulnerability information for PHP, Node.js, and Oracle Java into a report that both web agencies and their clients can understand. It is designed as a communication tool: it helps people who are not security specialists see whether an update is needed and what to do next.
 
-Vulneramigo is currently **in development** and being prepared for public release. It is not yet available as a public service.
+Vulneramigo is publicly available and running in production at https://vulneramigo.nortelia.co.jp/.
 
 ## Challenge → Solution
 
@@ -27,8 +27,8 @@ The check covers only the advisories included in the tool and the versions the u
 
 ## Status
 
-- **Development:** In progress
-- **Release:** Preparing for public release (not yet publicly available)
+- **Development:** Released / maintained
+- **Release:** Publicly available at https://vulneramigo.nortelia.co.jp/
 
 ## Role
 
