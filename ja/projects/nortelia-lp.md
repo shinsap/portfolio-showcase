@@ -41,7 +41,7 @@ Nortelia LPは、合同会社ノルテリアの公式コーポレートサイト
 - About
 - Contact
 
-英語版では、RepoBD、BQmenu、Portion Weight Match、Pack Optimizer、Rescue Pet Cardを紹介しています。
+英語版では、Hit & Lock、RepoBD、BQmenu、Portion Weight Match、Pack Optimizer、Rescue Pet Cardを紹介しています。
 
 英語で利用可能なプロダクトと、日本語UIまたは日本市場向け運用のプロダクトを明示的に分け、海外提供済みと誤認されないようにしています。
 
@@ -50,6 +50,14 @@ Nortelia LPは、合同会社ノルテリアの公式コーポレートサイト
 BQmenu英語事例では、実際のホテルからの相談を起点に、単発の受託システムではなく、他ホテルにも展開可能なB2B SaaSとして設計した経緯を説明しています。
 
 BQmenu本体がすでに多言語対応・海外展開済みであるとは記載していません。
+
+## Hit & LockとAI支援開発事例
+
+本番サイトでは、Hit & LockをBuilt by Norteliaとプロダクト一覧に追加し、AI支援開発の具体例としても掲載しています。
+
+Hit & Lockは、BtoB向けの「パズルクリア後にクーポンや特典を出せないか」という小さな着想から始まり、構想・要件整理に約3時間、AI駆動で遊べる初版まで約2時間。その後、UI、テスト、PWA、多言語、アクセシビリティ、シェア、計測、公開品質を追加調整しました。
+
+「5時間で完成した」という表現ではなく、小さなアイデアを短時間で実際に触れるプロダクトへ変え、そこから次の判断ができる状態を作る開発事例として位置付けています。
 
 ## Built by Nortelia
 
