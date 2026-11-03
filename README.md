@@ -1,6 +1,6 @@
 # Portfolio Showcase
 
-Last updated: October 29, 2026
+Last updated: November 4, 2026
 
 GitHub: https://github.com/shinsap
 
@@ -52,6 +52,7 @@ Small, focused projects are welcome — a single tool that removes one manual ta
 
 | Project | Type | Status | Public URL | Stack | Challenge Solved |
 |---|---|---|---|---|---|
+| [Hokkaidoku](projects/hokkaidoku.md) | Hokkaido-themed logic puzzle PWA | Test version / public | [App](https://hokkaidoku.nortelia.co.jp/) | TypeScript, Vite, Web Worker, PWA, Cloudflare Workers, PostHog | Players help Ezo deer find their territories: one deer per colored region, row, and column, with no deer touching; generated 6×6–12×12 boards each have one solution and need no guessing |
 | [Hit & Lock](projects/hit-and-lock.md) | Puzzle PWA / AI-assisted development experiment | Active / public | [App](https://hitandlock.nortelia.co.jp/) | Vite, TypeScript, PWA, Vitest, Playwright, Cloudflare Workers | Small B2B promotion idea → concept and requirements in about 3 hours, first playable AI-assisted build in about 2 more hours, then refined with testing, bilingual UI, accessibility and production readiness |
 | [BQmenu](projects/bq-menu.md) | Hotel banquet B2B SaaS | MVP completed / production, first customer confirmed | [App](https://app.bqmenu.com) (staff login) | React, TypeScript, Vite, Tailwind CSS, Supabase, PostgreSQL, Cloudflare Pages / Workers | Customer-driven product development from a real hotel operational request, built as a multi-tenant SaaS rather than a one-off system: fixed per-venue QR, venue/time overlap checking, and automatic timed publication replace printed menus and manual venue guidance |
 | [Portion Weight Match](projects/portion-weight-match.md) | Seafood / food packing optimization tool | Active | [App](https://portion-weight-match.vercel.app/) / [GitHub](https://github.com/shinsap/portion-weight-match) | Next.js, React, TypeScript, HiGHS/WASM, XLSX, Vercel | Variable-weight portions must be grouped into packs that meet a minimum total weight → exact optimization maximizes valid packs, minimizes excess weight, and exports an Excel work instruction entirely in the browser |
