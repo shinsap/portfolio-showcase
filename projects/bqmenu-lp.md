@@ -1,15 +1,14 @@
 # BQmenu LP
 
-
-## Measurement scope
-
-GA4 and Google Search Console setup/integration are included in my LP work. Event implementation, account-level configuration, and business results are separate evidence levels; see [measurement scope and verified behavior](measurement.md). No site-wide traffic or conversion uplift is inferred from installing analytics.
-
 ## Overview
 
 BQmenu LP is the go-to-market landing page for [BQmenu](bq-menu.md), a B2B SaaS product for hotel banquet operations. It was built as a commercial asset — not a simple product brochure — to introduce the product, communicate pricing and scope, and capture leads (demo requests and material requests) from hotels.
 
 The LP is live in production at `bqmenu.com`, deployed on Cloudflare Pages with GA4 event tracking and a working contact form confirmed end-to-end in production.
+
+## Measurement scope
+
+GA4 and Google Search Console setup/integration are included in my LP work. Event implementation, account-level configuration, and business results are separate evidence levels; see [measurement scope and verified behavior](measurement.md). No site-wide traffic or conversion uplift is inferred from installing analytics.
 
 ## Positioning & Copy Discipline
 

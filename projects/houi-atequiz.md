@@ -1,6 +1,6 @@
 # Direction Quiz / 方位当てクイズ
 
-## Purpose and status
+## Overview
 
 A local video-production experiment: turn geographic quiz data into short videos and covers. Published through [TikTok @houiatejp](https://www.tiktok.com/@houiatejp). There is no GitHub repository. It is presented as a media-processing prototype, not a hosted application.
 

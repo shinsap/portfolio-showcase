@@ -1,6 +1,6 @@
 # WobblyMaps
 
-## 目的・位置付け
+## 概要
 
 地図の輪郭を転がす映像を、地理データから生成するローカルの動画作成テストです。[TikTok @wobblymaps](https://www.tiktok.com/@wobblymaps)で公開しています。GitHubリポジトリはなく、データから映像を作る処理と見せ方の実験として紹介します。
 

@@ -1,17 +1,16 @@
 # Vulneramigo
 
+## Overview
+
+Vulneramigo is a lightweight web app (PWA) that turns website security settings and vulnerability information for PHP, Node.js, Oracle Java SE, and Next.js into a report that both web agencies and their clients can understand. It is designed as a communication tool: it helps people who are not security specialists see what to improve and what to do next.
+
+Vulneramigo is publicly available and running in production at https://vulneramigo.nortelia.co.jp/ (BETA).
 
 ## Preview-deployment failure and recovery checks
 
 PR #2 records a defect found on a deployed preview before production release. Visiting `/version.json` could pollute the cached `/` navigation response with JSON, while a failed installation could disturb the usable cache. Browser reproduction led to tighter navigation-cache writes and preservation of the active same-key cache during failed reinstallation.
 
 Two regression tests failed on the old code. The change passed the then-current 90 tests, and Chrome checks covered offline use, update, rollback, and preservation of the old version after a failed update. This is preview-stage validation, not a claimed production outage. It demonstrates why local test success was supplemented with deployed-browser checks.
-
-## Overview
-
-Vulneramigo is a lightweight web app (PWA) that turns website security settings and vulnerability information for PHP, Node.js, Oracle Java SE, and Next.js into a report that both web agencies and their clients can understand. It is designed as a communication tool: it helps people who are not security specialists see what to improve and what to do next.
-
-Vulneramigo is publicly available and running in production at https://vulneramigo.nortelia.co.jp/ (BETA).
 
 ## Challenge → Solution
 

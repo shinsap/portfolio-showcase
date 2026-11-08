@@ -1,15 +1,14 @@
 # Rescue Pet Card LP (formerly Rescue Cat Card LP)
 
-
-## Measurement scope
-
-GA4 and Google Search Console setup/integration are included in my LP work. Event implementation, account-level configuration, and business results are separate evidence levels; see [measurement scope and verified behavior](measurement.md). No site-wide traffic or conversion uplift is inferred from installing analytics.
-
 ## Overview
 
 Rescue Pet Card LP is the public-facing landing page for Rescue Pet Card. It explains the service concept, use case, and path to registration for people who want emergency pet-care information to be reachable when something happens to them.
 
 The LP was rebranded alongside the underlying app in mid-July 2026: the cat-only "Rescue Cat Card" LP became "Rescue Pet Card" LP, reflecting dog support, and the conversion path was rebuilt around a preview-before-purchase flow instead of a direct Stripe purchase link. The rebrand was publicly announced via press release on **July 25, 2026**, alongside the app-side launch.
+
+## Measurement scope
+
+GA4 and Google Search Console setup/integration are included in my LP work. Event implementation, account-level configuration, and business results are separate evidence levels; see [measurement scope and verified behavior](measurement.md). No site-wide traffic or conversion uplift is inferred from installing analytics.
 
 ## Challenge → Solution
 

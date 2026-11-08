@@ -1,6 +1,6 @@
 # WobblyMaps
 
-## Purpose and status
+## Overview
 
 A local experiment in generating map-shape rolling videos from geographic data. Published through [TikTok @wobblymaps](https://www.tiktok.com/@wobblymaps). No GitHub repository; the focus is a data-to-video pipeline and presentation tests.
 

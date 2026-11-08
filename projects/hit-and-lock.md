@@ -1,12 +1,5 @@
 # Hit & Lock
 
-
-## Mobile feedback translated into a measurable fix
-
-An iPhone Safari report that too little guess history was visible led to PR #11: a 4×3 keypad, revised stage sizing, dynamic viewport height, and safe-area handling. At turn seven, Chromium viewport checks increased fully visible history rows from 3 to 5 at 390×664, 3 to 6 at 390×844, and 1 to 2 at 320×568. The PR passed 207 tests, a build, and one E2E test.
-
-These figures are Chromium viewport measurements, not measurements from an actual iPhone. The PR left physical iPhone verification outstanding. Later device checks described elsewhere should not be confused with that milestone. My role was defining the usability problem and acceptance target; AI agents implemented and reviewed the layout change.
-
 ## Overview
 
 Hit & Lock is a bilingual four-digit deduction puzzle PWA built as a small experiment in AI-assisted product development.
@@ -14,6 +7,12 @@ Hit & Lock is a bilingual four-digit deduction puzzle PWA built as a small exper
 Players try to open a padlock and treasure box by guessing a four-digit code with no repeated digits. Each guess is evaluated with the Japanese labels 良 / 可 / 無, corresponding to correct digit and position, correct digit in the wrong position, or no match.
 
 Public URL: https://hitandlock.nortelia.co.jp/
+
+## Mobile feedback translated into a measurable fix
+
+An iPhone Safari report that too little guess history was visible led to PR #11: a 4×3 keypad, revised stage sizing, dynamic viewport height, and safe-area handling. At turn seven, Chromium viewport checks increased fully visible history rows from 3 to 5 at 390×664, 3 to 6 at 390×844, and 1 to 2 at 320×568. The PR passed 207 tests, a build, and one E2E test.
+
+These figures are Chromium viewport measurements, not measurements from an actual iPhone. The PR left physical iPhone verification outstanding. Later device checks described elsewhere should not be confused with that milestone. My role was defining the usability problem and acceptance target; AI agents implemented and reviewed the layout change.
 
 ## Origin
 

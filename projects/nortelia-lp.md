@@ -1,10 +1,5 @@
 # Nortelia LP
 
-
-## Measurement scope
-
-GA4 and Google Search Console setup/integration are included in my LP work. Event implementation, account-level configuration, and business results are separate evidence levels; see [measurement scope and verified behavior](measurement.md). No site-wide traffic or conversion uplift is inferred from installing analytics.
-
 ## Overview
 
 Nortelia LP is the public corporate site for Nortelia LLC.
@@ -12,6 +7,10 @@ Nortelia LP is the public corporate site for Nortelia LLC.
 The Japanese site presents Nortelia's domestic businesses and products. The English site is intentionally curated rather than being a full translation: it presents Nortelia as a small product studio and practical software builder, with a focus on product development, workflow tools, and AI-assisted development.
 
 The site also includes product and app landing pages such as Hearing Aid Denchichou and Battery Atta?.
+
+## Measurement scope
+
+GA4 and Google Search Console setup/integration are included in my LP work. Event implementation, account-level configuration, and business results are separate evidence levels; see [measurement scope and verified behavior](measurement.md). No site-wide traffic or conversion uplift is inferred from installing analytics.
 
 ## Public URLs
 

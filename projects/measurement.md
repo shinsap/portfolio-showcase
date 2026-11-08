@@ -1,5 +1,7 @@
 # Landing-page measurement: scope and evidence
 
+## Overview
+
 My LP work includes GA4 and Google Search Console (GSC) setup and integration, alongside page structure, inquiry forms, and deployment. The goal is to connect search visibility with on-site behavior and inquiries.
 
 | Area | Scope / available evidence |
