@@ -30,20 +30,28 @@ That timing refers to the first playable version, not the finished production re
 - 良 / 可 / 無 result labels
 - Hint and coin system
 - Retry rules and streak tracking
-- X sharing without exposing the answer
+- Share sheet after clearing (native share menu, X, LINE, Threads, copy), never exposing the answer; switches to the native share menu in home-screen-installed iPhone apps, and share links carry per-destination source tags
+- Saveable result images (1080×1920 story and 1080×1080 square) rendered on the device with no external service; they contain neither the answer nor the guessed numbers
+- Optional Ko-fi support link on the home page and the clear screen (a plain link, no external script or embed)
+- BGM (about 3-minute loop, 2.2 MB AAC) with on/off and volume controls, silent in iPhone silent mode, paused when the app goes to the background, and cached for offline playback; credit shown in settings
 - Offline-capable PWA
 - Local progress storage and resume
 - Color-vision support
 - Reduced-motion support
-- Anonymous PostHog event tracking
+- Anonymous PostHog event tracking, limited to domain + path + source information for page URLs and domain only for referrers
+- Security headers on all pages (CSP, HSTS, X-Content-Type-Options, Referrer-Policy, Permissions-Policy) and HTTP-to-HTTPS redirect
 
 ## Development Approach
 
 The project was intentionally kept small and framework-light.
 
-The core game logic was separated from the UI and covered with automated tests. The production version also includes end-to-end tests for the main flow, PWA behavior, offline startup, sharing, and analytics behavior when no key is configured.
+The core game logic was separated from the UI and covered with automated tests: 341 unit tests and 39 E2E tests covering the main play flow, layout at three screen sizes, PWA behavior, offline startup, sharing, analytics behavior when no key is configured, and no CSP violations in any scene.
 
 The goal was not to perfect the visual design before release. It was to turn a small idea into something usable quickly, then decide from the working product whether further investment was worthwhile.
+
+## Security Check
+
+In November 2026, a security check of the production site was carried out, resulting in security headers, an HTTPS redirect, minimized analytics data, and updated development dependencies. The post-change state was verified in production.
 
 ## Stack
 
@@ -72,6 +80,10 @@ The project was built using an AI-assisted development process:
 
 AI was used as part of the development workflow; the game itself does not contain a generative-AI feature.
 
+### AI-only operation experiment (2026-11)
+
+For the 2026-11 feature additions, implementation was done by Claude Code and review by Codex, connected and run automatically with an orchestration tool (herdr). The four feature PRs (share sheet, result images, BGM, image fixes) went from planning through review, merge, and production verification without human confirmation. Merge conditions were: zero required review findings, passing automated tests, and a successful preview build with security headers confirmed. Humans were involved only in setting direction, checking on a real device, and handling a branch-creation problem. On-device checks on iPhone (BGM, each share destination, image saving, Ko-fi link) found no problems.
+
 ## What This Demonstrates
 
 - Turning a lightweight idea into a usable product quickly
@@ -83,6 +95,8 @@ AI was used as part of the development workflow; the game itself does not contai
 - Offline-first delivery
 - Accessibility and reduced-motion handling
 - Production deployment on Cloudflare Workers
+- Security check and remediation of a production site
+- A largely automated implement-review-merge-verify loop with explicit merge gates
 
 ## Portfolio Position
 
