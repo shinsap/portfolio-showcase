@@ -1,5 +1,10 @@
 # Rescue Pet Card LP（旧 Rescue Cat Card LP）
 
+
+## 計測基盤の担当範囲
+
+LP制作の担当範囲にはGA4・Google Search Consoleの設定・連携を含めています。イベント実装、管理画面の設定確認、成果測定は区別して扱います。[計測の担当範囲と確認状況](measurement.md)に整理しています。計測導入のみを根拠に流入やCV率の改善実績とはしていません。
+
 ## 概要
 
 Rescue Pet Card LPは、Rescue Pet Cardの公開向けランディングページです。万が一の時にペットの情報を第三者が確認できるようにするサービスの考え方、利用シーン、登録導線を伝える役割を持っています。
@@ -53,3 +58,7 @@ Rescue Pet Card LPは、その前段にある認知・説明・導線のレイ�
 - 抽象的な価値を持つサービスのストーリー型LP設計
 - アプリ本体とマーケティング面の切り分け
 - Cloudflare Pagesでの静的サイトデプロイ
+
+---
+
+[一覧](../README.md) · [English](../../projects/rescuecat-lp.md)

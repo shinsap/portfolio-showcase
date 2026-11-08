@@ -1,5 +1,10 @@
 # BQmenu LP
 
+
+## Measurement scope
+
+GA4 and Google Search Console setup/integration are included in my LP work. Event implementation, account-level configuration, and business results are separate evidence levels; see [measurement scope and verified behavior](measurement.md). No site-wide traffic or conversion uplift is inferred from installing analytics.
+
 ## Overview
 
 BQmenu LP is the go-to-market landing page for [BQmenu](bq-menu.md), a B2B SaaS product for hotel banquet operations. It was built as a commercial asset — not a simple product brochure — to introduce the product, communicate pricing and scope, and capture leads (demo requests and material requests) from hotels.
@@ -107,3 +112,7 @@ BQmenu LP is the acquisition and commercialization layer built on top of it: it 
 - A read-only, human-gated AI review workflow (requirements audit → UI audit → STOP) applied to marketing/commercial content, not only application code
 - Extending a shipped SaaS product into a sellable one: sales deck, partner program, FAQ, and distribution-ready documentation
 - Production-grade delivery: analytics, lead capture, and metadata verified end-to-end on the live domain
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/bqmenu-lp.md)

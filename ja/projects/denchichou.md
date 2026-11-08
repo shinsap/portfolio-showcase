@@ -1,5 +1,10 @@
 # 補聴器でんち帳
 
+
+## 位置付けと公開構成
+
+用途を絞った操作とlocal-first構成を試す、公開中の小規模PWAです。Vercelがホスティング・デプロイ、Firebaseが同期、Dexie／IndexedDBが端末内保存を担い、Service Workerでオフライン利用を支えます。Firebaseを配信先として記載するものではありません。小規模な実験・プロトタイピングとして、公開構成と同期設計を紹介しています。
+
 ## 概要
 
 補聴器でんち帳は、介護業界向けに、施設利用者・訪問先の補聴器電池情報を記録・管理するPWAです。
@@ -51,3 +56,7 @@
 - IndexedDB + Firebaseによるoffline/local-first設計
 - LPからPWAへつなぐSEOファネル設計
 - 繰り返し作業を前提にしたUX設計
+
+---
+
+[一覧](../README.md) · [English](../../projects/denchichou.md)

@@ -1,5 +1,10 @@
 # Rescue Pet Card LP (formerly Rescue Cat Card LP)
 
+
+## Measurement scope
+
+GA4 and Google Search Console setup/integration are included in my LP work. Event implementation, account-level configuration, and business results are separate evidence levels; see [measurement scope and verified behavior](measurement.md). No site-wide traffic or conversion uplift is inferred from installing analytics.
+
 ## Overview
 
 Rescue Pet Card LP is the public-facing landing page for Rescue Pet Card. It explains the service concept, use case, and path to registration for people who want emergency pet-care information to be reachable when something happens to them.
@@ -53,3 +58,7 @@ Rescue Pet Card LP is the acquisition layer. It presents the service to new user
 - Story-driven landing page design for an abstract-value service
 - Separation between product application and marketing surface
 - Static site deployment on Cloudflare Pages
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/rescuecat-lp.md)

@@ -28,3 +28,7 @@ Shinkyuは、鍼灸治療院向けの営業支援ツールです。
 - 業務支援ツールの設計
 - Cloudflare deployment configuration
 - 速いプロトタイピングと改善
+
+---
+
+[一覧](../README.md) · [English](../../projects/shinkyu.md)

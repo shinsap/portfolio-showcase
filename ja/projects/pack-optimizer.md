@@ -40,3 +40,7 @@ GitHub: https://github.com/shinsap/pack-optimizer
 - 現場運用を前提にしたシンプルUX設計
 - 最適化アルゴリズムのWebアプリ実装
 - public repositoryによるオープン運用
+
+---
+
+[一覧](../README.md) · [English](../../projects/pack-optimizer.md)

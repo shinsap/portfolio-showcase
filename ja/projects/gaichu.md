@@ -79,3 +79,7 @@ Phase 1.5では、結果のシェアURL・上司への伝え方アドバイザ�
 - 24パターンの定型テンプレートによる上司説得アドバイザー（AIコストゼロ）
 - Cloudflare Pages FunctionsによるAPIシークレット分離
 - リリース前セキュリティチェックリスト運用（シークレット監査・Turnstile検証・緊急停止確認）
+
+---
+
+[一覧](../README.md) · [English](../../projects/gaichu.md)

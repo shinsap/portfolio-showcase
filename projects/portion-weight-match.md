@@ -1,5 +1,16 @@
 # Portion Weight Match
 
+
+## From operational requirements to algorithm redesign
+
+The business objective is lexicographic: maximize valid packs first, then minimize excess weight. Counterexamples showed that sequential greedy packing could violate that objective. PR #1 replaced it with global exact dynamic programming, checked against exhaustive solutions on randomized small cases. Its 953 passing tests were a milestone for that version; browser/Excel acceptance was still pending in that PR.
+
+The later column-generation PoC exposed another correctness boundary: duplicate columns, iteration limits, or solver errors must not count as convergence or justify an Optimal label. Termination handling and a full-MIP fallback were revised before production migration.
+
+Review findings were also tested rather than accepted automatically. An initial static review interpreted a bundled `.ts` Worker asset as an execution defect. Chromium verification showed that the actual JavaScript worker chunk ran and the `.ts` asset was never requested, so that diagnosis was corrected. Separate real fixes covered build output being included in TypeScript inputs and cleanup after partial WASM allocation failure. The PoC hardening report recorded three Chromium runs of the 17-class fixture, producing 30 packs with zero excess; this was not yet a cross-browser production sign-off.
+
+My contribution was defining the operational objective, unit handling and acceptance criteria, and deciding redesign/release scope from verification. AI agents implemented algorithms and tests and supplied independent review. The production design and later validation below are separate from these earlier milestones.
+
 ## Overview
 
 Portion Weight Match is a browser-based optimization tool for production sites that need to combine variable-weight portions into packs that meet a minimum total weight.
@@ -109,7 +120,7 @@ A representative US fixture with 366 pieces across 17 weight classes and a 4.5 l
 ## Public URLs
 
 - App: https://portion-weight-match.vercel.app/
-- GitHub: https://github.com/shinsap/portion-weight-match
+- Source: private.
 
 ## Role
 
@@ -145,3 +156,7 @@ A representative US fixture with 366 pieces across 17 weight classes and a 4.5 l
 - Keeping operational business data entirely inside the browser
 - Building a low-friction CSV → optimization → Excel workflow for non-specialist users
 - Using regression fixtures, independent AI review, browser E2E, security review, and Human Preview gates to move an MVP into a production release
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/portion-weight-match.md)

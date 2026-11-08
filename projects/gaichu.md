@@ -79,3 +79,7 @@ Phase 1.5 added result sharing, a boss communication advisor, and result screen 
 - Template-based boss communication advisor (24 combinations, zero AI cost)
 - Cloudflare Pages Functions for API secret isolation
 - Pre-release security checklist process (secrets audit, Turnstile verification, emergency stop)
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/gaichu.md)
