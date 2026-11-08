@@ -40,3 +40,7 @@ GitHub: https://github.com/shinsap/pack-optimizer
 - Simple, production-floor-oriented UX design
 - Small utility development with public deployment
 - Fixed-count pack optimization logic for variable-weight products
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/pack-optimizer.md)

@@ -6,6 +6,12 @@ Vulneramigo is a lightweight web app (PWA) that turns website security settings 
 
 Vulneramigo is publicly available and running in production at https://vulneramigo.nortelia.co.jp/ (BETA).
 
+## Preview-deployment failure and recovery checks
+
+PR #2 records a defect found on a deployed preview before production release. Visiting `/version.json` could pollute the cached `/` navigation response with JSON, while a failed installation could disturb the usable cache. Browser reproduction led to tighter navigation-cache writes and preservation of the active same-key cache during failed reinstallation.
+
+Two regression tests failed on the old code. The change passed the then-current 90 tests, and Chrome checks covered offline use, update, rollback, and preservation of the old version after a failed update. This is preview-stage validation, not a claimed production outage. It demonstrates why local test success was supplemented with deployed-browser checks.
+
 ## Challenge → Solution
 
 **Problem:** Security settings and vulnerability information for server-side technologies are published in technical language. Web agencies often need to explain to a client why a PHP, Node.js, Java, or Next.js update matters, and website managers at small businesses find it hard to judge whether an advisory affects them or how urgent it is.
@@ -70,3 +76,7 @@ The scope is stated explicitly. The URL check is a simple review of publicly vis
 - Privacy-conscious design that distinguishes browser-only processing from what is sent to the server
 - Separating observed, estimated, and unavailable data to make clear what can and cannot be concluded
 - Multilingual product design for domestic and international users
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/vulneramigo.md)

@@ -8,6 +8,10 @@ The Japanese site presents Nortelia's domestic businesses and products. The Engl
 
 The site also includes product and app landing pages such as Hearing Aid Denchichou and Battery Atta?.
 
+## Measurement scope
+
+GA4 and Google Search Console setup/integration are included in my LP work. Event implementation, account-level configuration, and business results are separate evidence levels; see [measurement scope and verified behavior](measurement.md). No site-wide traffic or conversion uplift is inferred from installing analytics.
+
 ## Public URLs
 
 - Japanese: https://nortelia.co.jp
@@ -48,7 +52,7 @@ The site explicitly distinguishes products with English-language access from pro
 
 The English BQmenu page explains a real product-development path: an actual hotel request became the starting point for a reusable B2B SaaS rather than a one-off custom system.
 
-The case study does not claim that the BQmenu product itself is already multilingual or internationally deployed.
+BQmenu has Japanese/English guest UI. This does not imply multilingual staff administration, PDF translation, or international deployment.
 
 ## Hit & Lock and AI-assisted Development
 
@@ -127,3 +131,7 @@ The approach emphasizes accurate semantic content and ordinary technical SEO rat
 ## Portfolio Use
 
 This project is suitable as a portfolio URL because it shows a production corporate site, multiple public product surfaces, multilingual content architecture, product case studies, contact operations, and deployment practices without exposing private product internals.
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/nortelia-lp.md)

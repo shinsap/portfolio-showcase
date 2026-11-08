@@ -4,6 +4,10 @@
 
 Denchi Atta? ("Got batteries?") is a personal and family-use PWA for recording household batteries. It helps users check which batteries are used in each device at replacement time.
 
+## Position and deployment responsibilities
+
+This is a public small-PWA experiment in focused workflows and local-first behavior. Vercel provides hosting and deployment; Firebase supports synchronization; Dexie/IndexedDB keeps local records and a Service Worker supports offline use. Firebase is not described here as the hosting platform. The case demonstrates a small deployment and synchronization design, not a large-scale service or measured adoption claim.
+
 ## Challenge → Solution
 
 **Problem:** When a battery runs out, most people cannot remember which battery type the device uses. Checking the device manual or the device itself takes time and often means opening hard-to-reach compartments. Households accumulate devices with different battery types and there is no easy place to record this.
@@ -43,3 +47,7 @@ Denchi Atta? ("Got batteries?") is a personal and family-use PWA for recording h
 - Local-first product thinking with optional cloud sync
 - Lightweight record and lookup workflows
 - Practical UX for repeated household maintenance tasks
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/denchi-atta.md)

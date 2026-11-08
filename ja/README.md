@@ -1,111 +1,140 @@
-# ポートフォリオ・ショーケース
+# プロダクト開発ポートフォリオ
 
-最終更新: 2026-11-08
+**業務課題を整理し、要件定義・技術設計・AIを活用した開発・公開後の運用まで取り組んでいます。**
 
-GitHub: https://github.com/shinsap
+北海道札幌市を拠点に、合同会社ノルテリアを運営しています。BtoB営業、新規事業、水産・食品分野での経験をもとに、現場の業務や事業上の制約をWebアプリや業務支援ツールの仕様へ落とし込んでいます。
 
-English version: [../README.md](../README.md)
+開発では、提供範囲、データの扱い、運用負荷、検証結果を踏まえて設計を判断します。Claude CodeやCodexを実装・レビューに活用し、プロダクトの方向性、要件の採否、受け入れ基準を自分で定めています。
 
-このリポジトリは、公開可能な範囲で開発実績をまとめたポートフォリオです。実運用中・開発中のリポジトリは、クライアント情報、運用設定、未公開のプロダクトコードを含むため、多くをprivateで管理しています。
+[GitHub](https://github.com/shinsap) · [Nortelia](https://nortelia.co.jp/) · [English](../README.md)
 
-ここでは、公開して問題ない範囲で、企画概要、担当範囲、技術スタック、開発プロセス、AI活用、運用・セキュリティ整理の実績をまとめています。
+最終更新：2026-11-08
 
-## プロフィール
+## 代表プロジェクト
 
-北海道札幌市を拠点とする独立系の開発者として、小規模から中規模のWebプロダクトや業務支援ツールを、企画・設計・実装・公開・運用まで一貫して手がけています。開発のご相談・制作のご依頼は、合同会社ノルテリア（Nortelia）を通じてお受けしています。まず業務の流れと困りごとを確認し、本当に必要な機能に絞って、Webアプリ・PWA・管理画面・LP・自動化ツールとして形にします。開発にはAI支援も取り入れ、費用と期間を抑えながら、公開後も使い続けられる仕組みづくりを重視しています。
+### 1. BQmenu｜現場の業務相談をマルチテナントSaaSへ
 
-## こんな依頼に対応できます
+ホテル宴会場のメニューPDFを、固定QRから指定日時に表示するB2B SaaS。現場の相談を、会場モデル、公開時間、テナント分離、PDF管理の要件へ整理しました。
 
-スキルの抽象的な列挙ではなく、実際に自社プロダクトで解決してきた課題の類型です。
+- **設計：** 物理区画と結合会場のモデル、PostgreSQL RLS、サーバー側のPDF検証。
+- **変更・復旧：** 内部IDを公開しない要件に合わせてPDF配信方式を変更。本番の削除失敗は追加マイグレーションで修正し、失敗中2件の再試行と再登録まで確認。
+- **担当：** 要件・データモデル・受け入れ基準の整理、AI開発の進行、指摘への対応判断、導入・運用手順。
 
-- **従業員5〜30名の中小企業・個人事業主**で、手作業で行っている日常業務をWebツールに置き換えたい
-- **LP＋決済フロー**を小予算・短期間で立ち上げたい（WordPress不要）
-- **介護・医療・福祉分野**など、スタッフがスマホからログインなしで使える共有ツールが必要
-- **農水産加工など業界特有の計算・最適化**を自動化したい（小規模すぎて既製ソフトが合わない）
-- **ホテル・会場運営など**、一般的なパッケージ製品では対応しにくい現場の業務課題をシステム化したい（例：宴会場ごとのメニュー表示）
-- **SEOコンテンツサイト＋アプリへの誘導導線**として、検索からサービスへつなぐファネルを作りたい
+**状態：** MVP完成・本番稼働、初号顧客の導入決定。
+**技術：** React / TypeScript / Supabase / PostgreSQL / Cloudflare
 
-すべての自社プロダクトは実際の課題から生まれ、業務フローに合わせて設計し、現在も本番運用中です。
+[詳細](projects/bq-menu.md) · [製品サイト](https://bqmenu.com)
 
-## 対応範囲
+### 2. Rescue Pet Card｜物理カードとWebサービスの継続運用
 
-構想段階から公開後の運用まで、一貫して対応できます。
+緊急時にNFC・QRカードからペットの保護情報を確認するサービス。認証・ペット情報・決済・公開画面を組み合わせています。
 
-- **企画：** 課題と現在の業務の流れを整理し、何を作るべきか・作らなくてよいかを判断する
-- **設計：** 要件定義、ユーザーフロー、データ構造、画面設計
-- **開発：** Webアプリ、PWA、管理画面、LP、決済導線、自動化ツール
-- **公開：** デプロイ、ドメイン設定、アクセス計測、問い合わせフォーム
-- **運用：** 保守、依存関係の更新、公開後の機能改善
+- **設計：** 猫犬の共通・固有データの分離、本人限定の購入前プレビュー、サーバー側の購入プラン判定。
+- **変更・改善：** リブランド後も発行済みカードのURLを維持。計測情報の不備で購入を止めないよう、任意の計測情報と購入必須情報を分離した修正を実施。
+- **担当：** 企画、要件・購入フローの整理、AI開発の進行、認可・購入フローの確認、継続運用。
 
-小規模な案件も歓迎します。「この手作業を1つなくしたい」といった相談から始めるのが、結果的に効果的なことも多いです。
+**状態：** 公開・運用中。計測関連修正の本番反映状況は詳細に区別して記載。
+**技術：** React / TypeScript / Supabase / Stripe / Cloudflare
 
-## 開発スタイル
+[詳細](projects/rescuecat-v4.md) · [製品サイト](https://rescuepet.jp/)
 
-- 技術選定の前に、業務課題と現在の業務フローを確認し、目的とユーザーフローを整理する
-- 必要な機能に絞り、課題の大きさに見合った費用と期間で作る
-- AI支援開発は手段として活用し、独立したレビュー工程と組み合わせる。設計・セキュリティ・リリースの判断は人間が行う
-- 開発本線、staging/test、archive済みrepoを分けて管理し、変更はstagingで検証してからproductionへ反映する
-- productionへの変更は明示的な承認を経てのみ行い、通常の開発作業のついでに本番を変更しない
-- 公開後も保守を続ける。依存関係や実行環境の更新（稼働中プロジェクトの依存関係に対する定期的なセキュリティ確認を含む）は、変更の影響範囲を評価したうえで反映する
-- secretをソースコードに入れず、Actions、webhooks、deploy keys、外部サービス連携を定期的に確認する
-- AI検索・生成AI経由のDiscoverabilityを意識し、schema.org / JSON-LD、robots.txt、sitemap、canonical、AI crawler対応、プロダクト/企業情報のmachine-readableな明示化を実装する
+### 3. Portion Weight Match｜食品加工の課題を整数最適化へ
 
-## 主なプロジェクト
+重量の異なる切り身を組み合わせ、最低重量を満たすパックを作るブラウザ完結型ツール。CSV入力からExcel作業指示書の出力まで対応しています。
 
-| Project | Type | Status | Public URL | Stack | 解決した課題 |
-|---|---|---|---|---|---|
-| [Hokkaidoku](projects/hokkaidoku.md) | 北海道モチーフのロジックパズルPWA | テスト版・公開中 | [App](https://hokkaidoku.nortelia.co.jp/) | TypeScript, Vite, Web Worker, PWA, Cloudflare Workers, PostHog | 手作業で問題を作らず、公平なパズルを毎日提供する必要がある → 6×6〜12×12の盤面をWeb Workerで自動生成し、答えが1つで論理だけで解ける問題に限定。理由つきヒントと北海道コンテンツの収集を組み合わせた |
-| [Hit & Lock](projects/hit-and-lock.md) | パズルPWA / AI支援開発実験 | 公開中 | [App](https://hitandlock.nortelia.co.jp/) | Vite, TypeScript, PWA, Vitest, Playwright, Cloudflare Workers | BtoB向け販促の小さな着想から開始。構想・要件整理約3時間、AI駆動で遊べる初版まで約2時間、その後テスト・日英対応・アクセシビリティ・公開品質を調整。2026-11にセキュリティヘッダー・https転送の対応、シェア選択画面・結果画像・BGMを追加し、機能追加4本のPRをAIだけの実装・レビュー・マージ運用（Claude Code + Codex）で実施 |
-| [BQmenu](projects/bq-menu.md) | ホテル宴会場向けB2B SaaS | MVP完成 / production稼働・初号顧客導入決定 | [App](https://app.bqmenu.com)（スタッフログイン制） | React, TypeScript, Vite, Tailwind CSS, Supabase, PostgreSQL, Cloudflare Pages / Workers | 実際のホテル現場からの業務相談を起点に、特定ホテル専用ではなくマルチテナントSaaSとして開発。固定QR・会場/時間重複チェック・自動公開タイミングで紙メニューの差し替えや会場案内の手間を軽減 |
-| [切り身重量合わせ / Portion Weight Match](projects/portion-weight-match.md) | 水産・食品加工向け最適化ツール | 稼働中 | [App](https://portion-weight-match.vercel.app/) / [GitHub](https://github.com/shinsap/portion-weight-match) | Next.js, React, TypeScript, HiGHS/WASM, XLSX, Vercel | 不定貫の切り身などを最低パック重量以上になるよう組み合わせる作業を自動化。条件を満たすパック数を最大化し、総余剰重量を最小化してExcel作業指示書までブラウザ内で出力 |
-| [Rescue Pet Card](projects/rescuecat-v4.md)（旧Rescue Cat Card v4） | 緊急時ペット保護サービス | ローンチ済み / 稼働中 | [App](https://app.rescuepet.jp/) | React, React Router v7, TypeScript, Vite, Tailwind CSS, Supabase, Stripe, Cloudflare Pages/Workers | 飼い主が倒れた時に第三者が猫・犬の情報を知る手段がなかった → NFC/QRカード＋Stripe＋Supabase。2026年7月に猫専用から猫犬両対応へリブランドし、購入前プレビュー方式へフロー刷新 |
-| [RepoBD](../projects/repobd.md) | 開発者向けsecret transport CLI / OSS | v0.1.1公開中 | [Site](https://repobd.com) / [GitHub](https://github.com/repobd/repobd) | TypeScript, Node.js, Cloudflare Workers, D1, AES-256-GCM | API key/tokenにはrepoの文脈がない → 一回限りの暗号化deliveryを意図したcanonical Git originにbindし、wrong-repo pullをsecret取得前に拒否。同一repo内のbranch、environment、credential用途、受信者の違いは判定対象外 |
-| [Vulneramigo（ヴァルネラミーゴ）](projects/vulneramigo.md) | Web制作会社・中小企業向けWebサイトのセキュリティ確認・脆弱性情報レポートツール | 公開中 / 稼働中（BETA） | [App](https://vulneramigo.nortelia.co.jp/) | React, TypeScript, Vite, PWA, Cloudflare Workers | セキュリティ設定やPHP・Node.js・Oracle Java SE・Next.jsの脆弱性情報は専門的で非技術者に説明しにくい → 外部から確認できる公開設定を調べる非侵入型のURL診断（HTTPS・セキュリティヘッダー・DNS・SPF/DMARC）と、収録済み情報とのバージョン照合を組み合わせ、担当者向けの平易な説明と制作会社向け技術情報をレポート化（日英西対応、印刷・PDF保存、任意のアクセス環境付録） |
-| [Rescue Pet Card LP](projects/rescuecat-lp.md)（旧Rescue Cat Card LP） | ランディングページ | 稼働中 | [LP](https://rescuepet.jp/) | Astro, TypeScript, Tailwind CSS, Cloudflare Pages | 抽象的な価値を持つサービスをストーリーで伝え、Stripe直接購入ではなくアプリの無料プレビュー登録へ誘導するLP |
-| [Nortelia LP](projects/nortelia-lp.md) | コーポレートサイト | 稼働中 | [LP](https://nortelia.co.jp) | Astro, TypeScript, Tailwind CSS, Cloudflare Pages | 自社開発アプリを紹介し、補聴器電池検索LPとSEOコンテンツツールを内包するコーポレートサイト |
-| [電池あった？](projects/denchi-atta.md) | 家庭向け電池記録PWA | 稼働中 | [LP](https://nortelia.co.jp/apps/battery/) / [App](https://app.nortelia.co.jp/) | React, TypeScript, Vite, Dexie, Firebase, PWA | どの機器にどの電池か毎回わからない → ログイン不要PWAで家族間同期 |
-| [補聴器でんち帳](projects/denchichou.md) | 介護業界向け補聴器電池記録PWA | 稼働中 | [LP](https://nortelia.co.jp/apps/denchichou/) / [App](https://denchichou.nortelia.co.jp/) | React, TypeScript, Vite, Dexie, Firebase, PWA | 介護スタッフが利用者ごとの電池サイズを毎回確認・引き継ぎ断絶 → 名前検索＋スタッフ同期コード |
-| [Pack Optimizer](projects/pack-optimizer.md) | 最適化ツール | 稼働中 | [App](https://pack-optimizer.vercel.app/) | Next.js, React, TypeScript, Tailwind CSS, Vercel | 水産加工業者が定量パック組み合わせを手計算 → アルゴリズムで自動最適化 |
-| [BQmenu LP](projects/bqmenu-lp.md) | ランディングページ / Go-to-Market | production稼働 | [LP](https://bqmenu.com) | Vite, React, TypeScript, Tailwind CSS, Cloudflare Pages | Source of Truthに基づき製品仕様・営業表現・パートナー資料を一致させ続けるプロセスで開発。GA4によるリード計測をproduction環境で確認済み |
-| [Shinkyu](projects/shinkyu.md) | 営業支援ツール | 稼働中 / 非公開運用 | private運用 | Next.js, React, TypeScript, Supabase, Anthropic SDK, Cloudflare Pages | 鍼灸治療院向けAI支援営業ツール |
-| [外注前ナビ](projects/gaichu.md) | 中小企業向け外注前診断ツール | 稼働中 | [App](https://gaichu.nortelia.co.jp) | Astro, React, TypeScript, Tailwind CSS v4, Cloudflare Pages, Cloudflare Pages Functions, Gemini 2.5 Flash-Lite, Turnstile, Zod | 「作らない・内製する・外注する」をQ&A形式で整理する診断サービス。診断ロジックはクライアント完結、AIは出力整形のみ |
+- **設計：** パック数を最大化し、その条件下で余剰重量を最小化。業務データは外部送信せず、計算はWeb Workerで実行。
+- **設計変更：** 逐次方式の反例を受けて厳密DPへ変更。その後、HiGHS・WebAssemblyを用いた列生成・MIPへ段階的に発展。未確認の結果を「最適解」としない判定条件を検証。
+- **担当：** 業務課題、目的関数、入力制約、単位処理の要件設計と検証結果に基づく再設計判断。
 
-## AIツール活用
+**状態：** 公開・運用中。ソースコード非公開。
+**技術：** Next.js / TypeScript / HiGHS・WebAssembly / Web Workers / Vitest / Playwright
 
-AIは開発を効率化するための手段であり、それ自体が提供価値ではありません。費用と期間を抑えるために活用し、お客様にとって大切な「業務に合っていて、公開後も保守できる仕組み」を届けることを重視しています。
+[詳細](projects/portion-weight-match.md) · [アプリ](https://portion-weight-match.vercel.app/)
 
-AIツールは主に以下に使っています。
+### 4. RepoBD｜開発中の失敗を用途を絞ったOSSへ
 
-- 要件分解
-- プロトタイプ作成
-- コンポーネント実装
-- リファクタリング補助
-- ドキュメント作成
-- セキュリティ・リポジトリ棚卸し
-- デプロイやworkflowの確認
+APIキーを誤ったリポジトリへ設定した経験を起点にしたCLI。暗号化したキーの一回限りの受け渡しと、取得前のGit origin照合を組み合わせています。
 
-AIの出力はそのまま採用せず、プロダクトの目的、データの扱い、運用上の制約、セキュリティ面を確認してから取り込んでいます。
+- **設計：** クライアント側暗号化、短い有効期限、限定した `.env` 書き込み。保護対象と対象外を要件で明示。
+- **失敗時の扱い：** 書き込み確認後に使用済み処理を行い、その通信が失敗した際はファイルを再度書き換えず、回数を限定して再試行。
+- **担当：** 課題・保護範囲・脅威モデルの策定、AI実装と独立レビューの進行、修正・公開判断。
 
-## 公開用コードサンプル
+**状態：** v0.1.1公開、MITライセンス。
+**技術：** TypeScript / Node.js / Cloudflare Workers / D1 / AES-256-GCM
 
-- [AI支援開発ワークフロー例](code-samples/ai-workflow-example.md)
-- [フロントエンドコンポーネント例](code-samples/frontend-component-example.tsx)
-- [API境界設計例](code-samples/api-boundary-example.ts)
+[詳細](projects/repobd.md) · [公開コード](https://github.com/repobd/repobd) · [製品サイト](https://repobd.com)
 
-これらは公開用に簡略化・サニタイズしたサンプルです。production codeそのものではなく、実装スタイルや設計判断を示すためのものです。
+## 技術と設計判断
 
-## private repo運用について
+| 領域 | 使用技術・取り組み | 主な事例 |
+|---|---|---|
+| Webアプリ・PWA | TypeScript、React、Next.js、Vite、Service Worker | Rescue Pet Card、Hit & Lock |
+| データ・認可 | Supabase、PostgreSQL、RLS、サーバー側検証 | BQmenu、Rescue Pet Card |
+| 計算・ブラウザ処理 | 整数最適化、WebAssembly、Web Workers | Portion Weight Match |
+| AI機能 | 決定論的ルールと生成AIの分離、APIキーのサーバー側管理 | 外注前ナビ |
+| 品質・復旧 | Vitest、Playwright、境界値・回帰テスト、更新失敗・復旧の確認 | Portion Weight Match、Vulneramigo |
+| 公開・計測 | Cloudflare、Vercel、GitHub Actions、GA4、GSC | プロダクト・LP各案件 |
+| メディア処理 | Python、Playwright、FFmpeg、地理データ・音声合成 | 方位当てクイズ、WobblyMaps |
 
-多くのrepoは以下の理由でprivate管理しています。
+## AIを活用した開発
 
-- 開発中のプロダクト
-- クライアント・パートナーに関わる情報
-- 運用・デプロイ設定
-- 未公開の実装詳細
-- secretや外部サービス連携の安全管理
+herdrを開発作業環境として使い、Claude CodeとCodexを複数のペインで運用しています。案件ごとの作業を整理し、実装とレビューを役割分担して進めています。
 
-必要に応じて、共有可能な範囲のファイル、スクリーンショット、画面共有、またはサニタイズ済みrepoで詳細を説明できます。
+| 役割 | 主な担当 |
+|---|---|
+| 私 | 課題整理、提供範囲、設計判断、受け入れ基準、指摘への対応判断、実機・業務視点の確認 |
+| Claude Codeなどの実装AI | 合意した要件に沿ったコード・テスト・文書の作成と修正 |
+| CodexなどのレビューAI | 要件と差分の照合、不具合や認可・データ処理上の懸念の指摘 |
 
-## お問い合わせ
+指摘は、影響・成立条件・利用者の操作・修正コスト・運用負荷を踏まえて判断します。AIレビュー自体も、実測結果や追加検証によって再評価します。コードをAIが作成した範囲と、自分が定義・判断した範囲を各事例で説明します。
 
-開発のご相談・制作のご依頼は、[nortelia.co.jp/contact](https://nortelia.co.jp/contact/) のお問い合わせフォームからご連絡ください。
+Hit & Lockでは、対象の機能追加に限り、事前に定めたテスト・レビュー条件で自動マージと本番確認を行う実験も実施しました。全案件共通のリリース方式ではありません。
+
+[開発・検証フロー](code-samples/ai-workflow-example.md)
+
+## その他の開発実績
+
+| 案件 | 内容・技術的な特徴 |
+|---|---|
+| [Vulneramigo](projects/vulneramigo.md) | URLの公開設定と収録済み脆弱性情報を確認。非技術者と制作会社双方へレポートを提供。実配信で発見したキャッシュ不具合の回帰テストも実施 |
+| [Hokkaidoku](projects/hokkaidoku.md) | Web Workerによる問題生成、理由付きヒント、オフライン対応。テスト版公開中 |
+| [Hit & Lock](projects/hit-and-lock.md) | TypeScript製PWA。ゲームロジックとUIの分離、単体・E2Eテスト、モバイル表示改善、AI開発運用の実験 |
+| [外注前ナビ](projects/gaichu.md) | JSONルールで診断し、生成AIは説明の整形に限定。AI停止時にも診断は継続 |
+| [Pack Optimizer](projects/pack-optimizer.md) | 固定個数パックの組み合わせ計算。[ソースコード公開](https://github.com/shinsap/pack-optimizer) |
+| [Shinkyu](projects/shinkyu.md) | 鍼灸治療院向け営業支援ツール。非公開運用 |
+
+## 小規模PWA・用途別プロトタイピング
+
+公開中の小規模PWAとして、導入体験とlocal-first構成を試した案件です。Vercelが配信・デプロイ、Firebaseが同期、Dexie／IndexedDBが端末内保存を担います。
+
+- [電池あった？](projects/denchi-atta.md)：家庭の機器・電池情報の記録と共有。
+- [補聴器でんち帳](projects/denchichou.md)：利用者名での検索とスタッフ間共有、型番検索LPからの導線。
+
+## Webサイト・LP・計測基盤
+
+サイト制作に加え、検索流入から問い合わせまでを確認するためのGA4・Google Search Console（GSC）の設定・連携も扱います。案件ごとの設定・動作確認範囲と、成果改善の実績を分けて記載しています。
+
+[Nortelia](projects/nortelia-lp.md) · [BQmenu LP](projects/bqmenu-lp.md) · [Rescue Pet Card LP](projects/rescuecat-lp.md) · [計測の担当範囲・確認状況](projects/measurement.md)
+
+## 動画生成・メディア処理の技術実験
+
+Pythonとブラウザ描画を組み合わせ、データから映像・音声・カバーを生成するローカル制作パイプラインです。動画作成テストとして制作し、TikTok等へ投稿しています。
+
+- [方位当てクイズ](projects/houi-atequiz.md)：JSON → 地図・方位図 → ナレーション・合成音 → ショート動画。[TikTok](https://www.tiktok.com/@houiatejp)
+- [WobblyMaps](projects/wobblymaps.md)：GeoJSON → 形状処理・転がり表現 → 接地音と投稿先別動画。[TikTok](https://www.tiktok.com/@wobblymaps)
+
+## 過去の生成AIコンテンツ制作
+
+[Suno楽曲制作](projects/suno-music.md)：Sunoによる楽曲生成、AIによるサムネイル制作、YouTube公開とDistroKid経由の音楽配信。ソフトウェア開発とは別の制作実験です。
+
+## ソースコードと詳細確認
+
+公開コードは[RepoBD](https://github.com/repobd/repobd)と[Pack Optimizer](https://github.com/shinsap/pack-optimizer)から確認できます。その他の多くの案件は事業・クライアント・運用情報の扱いから非公開です。動画2件はローカル管理でGitHubリポジトリはありません。
+
+各詳細ページには公開可能な設計判断・担当範囲・検証結果をまとめています。基本的な型・表示処理の[補助サンプル](code-samples/frontend-component-example.tsx)と[入力検証例](code-samples/api-boundary-example.ts)は、実案件のコードや品質を証明するものではありません。
+
+## 連絡先
+
+業務理解・要件定義・AI活用を含むプロダクト開発について、採用・協業・開発のご相談をお受けしています。
+
+[Nortelia お問い合わせフォーム](https://nortelia.co.jp/contact/)

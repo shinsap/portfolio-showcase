@@ -1,54 +1,24 @@
-# AI-Assisted Development Workflow Example
+# Requirements, implementation, review, and acceptance
 
-This is a sanitized example of how I use AI tools during development.
+This describes the working approach used across the case studies; release authority and checks depend on each project's agreed scope. The adjacent TypeScript/TSX snippets are illustrative examples, not extracted production code.
 
-## 1. Define The Goal
+I use herdr as my development workspace, running Claude Code and Codex in multiple panes to organize project work and separate implementation from review.
 
-Start with a product-level description:
+1. **Frame the problem.** Identify users, operational constraints, business objective, and what the product will not do.
+2. **Define acceptance.** Specify data and authorization boundaries, failure behavior, and observable acceptance criteria before directing implementation.
+3. **Implement a bounded change.** Claude Code or another implementation agent writes code, focused tests, and updated documentation.
+4. **Review independently.** Codex or another review agent compares requirements and the diff, reporting findings separately from implementation. I decide scope and response based on evidence, impact, UX, and operational cost.
+5. **Verify the relevant boundary.** A unit test, packaged CLI test, deployed-preview check, and physical-device check answer different questions. Record what passed and what remains unverified.
+6. **Release and operate.** Follow project-specific authority for commits, deployment, and rollout. Update operating instructions when behavior changes. A merged PR alone is not deployment evidence.
 
-- who uses it
-- what problem it solves
-- what data it touches
-- what should not be exposed
-- what the deployment path looks like
+## Examples of decisions that changed the work
 
-## 2. Ask AI For A First Pass
+- [BQmenu](../projects/bq-menu.md): align PDF delivery with requirements; diagnose a partial deletion failure and verify retries.
+- [Portion Weight Match](../projects/portion-weight-match.md): replace an algorithm after counterexamples; overturn a static-review diagnosis with browser evidence.
+- [RepoBD](../projects/repobd.md): test the published package and handle uncertain remote consumption after a local write.
+- [Vulneramigo](../projects/vulneramigo.md): verify offline/update recovery on a deployed preview.
+- [Hit & Lock](../projects/hit-and-lock.md): a separately scoped experiment allowed automated merging and production checks under predefined conditions.
 
-Use AI for:
+AI supplies implementation and review capacity. I own problem definition, product scope, acceptance decisions, and the decision to accept, fix, defer, or stop.
 
-- initial component structure
-- data model suggestions
-- edge-case checklist
-- implementation alternatives
-
-## 3. Review Before Implementation
-
-Before accepting code:
-
-- check whether the design matches the existing app
-- remove unnecessary abstractions
-- verify secret handling
-- check external service assumptions
-- confirm testing and deployment impact
-
-## 4. Implement In Small Steps
-
-Prefer small commits and narrow changes:
-
-- one feature or fix at a time
-- focused tests where useful
-- clear README or handover notes when operation changes
-
-## 5. Operational Review
-
-For active repositories:
-
-- review GitHub Actions
-- check secrets names
-- check webhooks and deploy keys
-- remove stale deployment automation
-- archive old repositories with clear warnings
-
-## Result
-
-AI accelerates implementation, but final responsibility remains with the developer: product fit, security, deployment, and maintainability.
+[Portfolio](../README.md) · [日本語](../ja/code-samples/ai-workflow-example.md)

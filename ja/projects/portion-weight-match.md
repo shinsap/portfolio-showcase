@@ -90,6 +90,16 @@ Excelはブラウザ内で独自のOOXML/ZIP writerを使って生成し、XML e
 
 本番では、MIME sniffing防止、Referrer Policy、framing防止、未使用ブラウザ権限の制限などのsecurity headerも追加しています。
 
+## 業務要件からアルゴリズムの再設計へ
+
+目的は「成立するパック数の最大化」を優先し、その条件下で「余剰重量の最小化」を行うことです。逐次的な貪欲法ではこの目的を満たさない反例が見つかり、PR #1で全体を扱う厳密DPへ変更しました。ランダム生成した小規模入力を総当たりの解と比較しています。この時点の953テスト通過は当該版の実績であり、同PRではブラウザ・Excelの受け入れ確認は未完了でした。
+
+後続の列生成PoCでは、列の重複・反復上限・ソルバーエラーを収束と見なすと、根拠なくOptimalと表示する問題がありました。終了条件とfull MIPへのフォールバックを修正し、本番移行前の検証を進めました。
+
+レビューの指摘自体も実測で確認しています。当初は配信物の`.ts` Workerを実行不良と判断しましたが、Chromiumで実際にはJavaScriptのWorkerが動き、`.ts`は取得されないことを確認して診断を訂正しました。一方、ビルド出力がTypeScriptの入力に混入する問題と、WASMの部分的なメモリ確保失敗時の解放処理は実際に修正しています。PoCの強化記録には17階級の入力で30パック・余剰ゼロをChromiumで3回確認した結果がありますが、この時点では本番・全ブラウザの合格判定ではありません。
+
+自分は業務上の目的関数、単位処理、受け入れ基準を定義し、検証結果から再設計と公開範囲を判断しました。アルゴリズム実装・テスト・独立レビューはAIを活用しています。以下の本番設計・後続の検証結果と、これらの途中段階の記録は区別しています。
+
 ## 検証
 
 本番リリース前には以下を確認しました。
@@ -110,7 +120,7 @@ USの代表fixtureでは、17重量区分・366 pieces・最低4.5lbに対して
 ## 公開URL
 
 - App: https://portion-weight-match.vercel.app/
-- GitHub: https://github.com/shinsap/portion-weight-match
+- ソースコード：非公開。
 
 ## 担当範囲
 
@@ -147,3 +157,7 @@ USの代表fixtureでは、17重量区分・366 pieces・最低4.5lbに対して
 - 業務データを外部へ送らないbrowser-only設計
 - CSV入力 → 最適化 → Excel作業指示書までを1つの軽量Webツールへ統合するUX
 - regression fixture、独立AI review、browser E2E、security review、Human Previewを使い、MVPを本番リリースまで仕上げる開発プロセス
+
+---
+
+[一覧](../README.md) · [English](../../projects/portion-weight-match.md)

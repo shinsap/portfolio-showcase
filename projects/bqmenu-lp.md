@@ -6,6 +6,10 @@ BQmenu LP is the go-to-market landing page for [BQmenu](bq-menu.md), a B2B SaaS 
 
 The LP is live in production at `bqmenu.com`, deployed on Cloudflare Pages with GA4 event tracking and a working contact form confirmed end-to-end in production.
 
+## Measurement scope
+
+GA4 and Google Search Console setup/integration are included in my LP work. Event implementation, account-level configuration, and business results are separate evidence levels; see [measurement scope and verified behavior](measurement.md). No site-wide traffic or conversion uplift is inferred from installing analytics.
+
 ## Positioning & Copy Discipline
 
 The core design challenge on this project was not "write a landing page" — it was keeping the **defined product specification and the public sales language in exact agreement**, across the LP, the customer-facing sales deck, and the partner program materials, as all three were being developed at the same time.
@@ -107,3 +111,7 @@ BQmenu LP is the acquisition and commercialization layer built on top of it: it 
 - A read-only, human-gated AI review workflow (requirements audit → UI audit → STOP) applied to marketing/commercial content, not only application code
 - Extending a shipped SaaS product into a sellable one: sales deck, partner program, FAQ, and distribution-ready documentation
 - Production-grade delivery: analytics, lead capture, and metadata verified end-to-end on the live domain
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/bqmenu-lp.md)

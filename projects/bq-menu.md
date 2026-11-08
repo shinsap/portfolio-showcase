@@ -45,6 +45,23 @@ Registered banquets cannot be partially edited or have their PDF swapped in plac
 - **Upload path**: PDF uploads go through a Supabase Edge Function with `service_role` access rather than a direct client-to-storage insert policy, so file-type/structure validation happens server-side instead of being trusted from the client.
 - **Guest UX**: minimal by design — QR scan, browser view, nothing to install or sign up for.
 
+## Development decisions and recovery
+
+The starting point was a single-hotel demo. I defined the reusable hotel, venue, publication, and authorization requirements before directing implementation of the multi-hotel model. Existing demo tables and QR behavior were preserved, with before/after read-only comparisons.
+
+| Trigger | Decision and implementation | Verification / outcome |
+|---|---|---|
+| Client upload lacked a direct Storage insert policy | Retain server-side PDF validation through an Edge Function rather than grant direct client uploads | Upload design remains aligned with authorization and file-validation requirements |
+| Signed PDF URLs exposed internal path identifiers, conflicting with the requirements | Switch guest delivery to an Edge proxy that checks publication status on each request; reconcile requirements, RLS, and test documents | Delivery implementation and specification brought back into agreement |
+| Production PDF deletion succeeded but its database bookkeeping failed | Logs identified SQLSTATE 42883: `pg_catalog.coalesce` incorrectly treated SQL syntax as a function. Add a migration redefining the affected function | Two failed deletions retried successfully; registration in the same venue/time slot confirmed |
+| Seed script reported an error after COMMIT | Inspect committed data before deciding whether to rerun; revise the script for future environments | Confirmed insertion without repeating production seeding |
+
+These are distinct cases: a requirements correction, a production recovery, and a deployment-script diagnosis. A similar unused billing function was corrected preventively; it is not presented as another production incident.
+
+Scope also evolved through operating decisions. Initial venue combinations cover actual hotel usage, while the model allows expansion. Guest UI supports Japanese and English; this does not mean automatic PDF translation, multilingual staff administration, or overseas billing.
+
+Evidence: repository history, requirements and migration records, and the closed guest-language issue reviewed on November 8, 2026. I owned scope and acceptance decisions; implementation and technical review were AI-assisted.
+
 ## AI-Orchestrated Development
 
 BQmenu's requirements, architecture, and implementation were developed using a requirements-driven, multi-agent AI workflow rather than a single "AI wrote the app" process.
@@ -105,3 +122,7 @@ The review was completed with server-side boundaries reviewed, infrastructure MF
 - Deliberate scope control: choosing not to build an edit feature, and explaining why, rather than leaving it as an unstated gap
 - Moving a completed MVP into commercial SaaS rollout by reassessing the threat model and balancing security, UX, and operational cost rather than treating every possible hardening measure as mandatory
 - End-to-end delivery from requirements through production deployment
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/bq-menu.md)

@@ -32,3 +32,7 @@ Product planning, game design, and acceptance decisions were led by Shinya. Clau
 - PWA
 - Cloudflare Workers
 - PostHog
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/hokkaidoku.md)

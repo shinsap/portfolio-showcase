@@ -4,6 +4,10 @@
 
 Hearing Aid Denchichou is a PWA for the care industry. It is designed for recording hearing-aid battery information for care-facility residents and home-visit care clients.
 
+## Position and deployment responsibilities
+
+This is a public small-PWA experiment in focused workflows and local-first behavior. Vercel provides hosting and deployment; Firebase supports synchronization; Dexie/IndexedDB keeps local records and a Service Worker supports offline use. Firebase is not described here as the hosting platform. The case demonstrates a small deployment and synchronization design, not a large-scale service or measured adoption claim.
+
 ## Challenge → Solution
 
 **Problem:** Care staff working at facilities or on home visits need to check the hearing-aid battery size for each resident before every battery replacement. The battery size varies by manufacturer and model, so staff have to look it up each time or rely on handwritten notes. When staff change shifts or new staff are assigned, the information is lost.
@@ -51,3 +55,7 @@ The LP functions as an SEO content tool targeting long-tail searches from care w
 - Offline/local-first thinking with IndexedDB + Firebase sync
 - LP-to-app service funnel design
 - SEO content strategy integrated into a service lead funnel
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/denchichou.md)

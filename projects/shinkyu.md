@@ -28,3 +28,7 @@ Shinkyu is a sales support tool for acupuncture clinic-related business use.
 - Business workflow support
 - Cloudflare deployment configuration
 - Rapid product iteration
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/shinkyu.md)

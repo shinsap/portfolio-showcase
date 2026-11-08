@@ -88,6 +88,12 @@ When Claude Code, Codex, or other agents are running across several repositories
 
 A practical benefit is that the raw API key does not need to be pasted directly into an AI chat. The RepoBD delivery URL is itself secret-bearing and must still be handled through a private, trusted channel.
 
+## Failure handling and release evidence
+
+A local filesystem write and remote delivery consumption cannot form one atomic transaction. The lifecycle therefore uses a claim lease, local decryption and validation, overwrite confirmation where needed, lease revalidation, file write/readback, and only then consumption. If consumption fails after a verified write, bounded retries do not write the file again. An identical existing value can complete without another write.
+
+These are designed and tested failure modes, not claimed production incidents or an exactly-once guarantee across systems. The v0.1.1 handover records 968 tests across 19 files, passing build/type checks, and live synthetic E2E using the installed npm tarball against the production API, including normal use, wrong repository, replay, and expiry. Testing the distributed artifact checks a different boundary from running source locally.
+
 ## Development & Review Process
 
 RepoBD was built with a requirements-driven, review-gated multi-agent workflow.
@@ -142,3 +148,7 @@ repobd pull --help
 - Designing fail-closed behavior for security-sensitive local file writes
 - Using independent AI implementation and review roles while retaining human authority over architecture and release decisions
 - Shipping the CLI, backend infrastructure, documentation, OSS repository, and public landing page as one coherent product
+
+---
+
+[Portfolio](../README.md) · [日本語](../ja/projects/repobd.md)
