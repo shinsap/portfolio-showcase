@@ -1,4 +1,4 @@
-# Shinya Sato | Product Development Portfolio
+# Product Development Portfolio
 
 **I turn business problems into requirements, technical designs, AI-assisted implementation, and products that can be operated after launch.**
 
@@ -77,6 +77,8 @@ A CLI created after an API key was applied to the wrong repository. It combines 
 | Media processing | Python, Playwright, FFmpeg, geographic data, audio synthesis | Direction Quiz, WobblyMaps |
 
 ## AI-assisted Development
+
+I use herdr as my development workspace, running Claude Code and Codex in multiple panes to organize project work and separate implementation from review.
 
 | Role | Responsibility |
 |---|---|

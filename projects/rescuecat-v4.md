@@ -1,14 +1,5 @@
 # Rescue Pet Card (formerly Rescue Cat Card v4)
 
-
-## Requirements change and checkout resilience
-
-The move from a cat-only service to Rescue Pet Card involved species-specific records, purchase eligibility, owner preview, and continuity for already-issued physical cards. It was treated as a service migration rather than a label change.
-
-A separate improvement in PR #56 distinguished purchase-critical fields from optional attribution fields (`ga_client_id`, `ga_session_id`, and first/last-touch UTM metadata). Invalid optional items, including values over Stripe's 500-character metadata limit, are dropped individually rather than truncated or allowed to block checkout. Required business-field validation remains in place; no automatic Stripe retry was introduced, and raw attribution values are not logged.
-
-The reviewed change passed 32 mocked Deno tests, with three regression tests failing against the old implementation, plus type checks and independent review. The PR was merged, but its record explicitly did not establish Edge Function deployment. This is a tested, merged resilience improvement—not evidence of a completed production-outage recovery. I owned the priority and acceptance boundary; AI agents implemented and reviewed the change.
-
 ## Overview
 
 Rescue Pet Card is a launched service for emergency situations where a third party can scan an NFC/QR card and access information needed to protect a cat or dog when the owner is unable to respond.
@@ -76,6 +67,14 @@ The service originally launched as a cat-only product ("Rescue Cat Card"). In mi
 - Cloudflare Pages/Workers
 - Wrangler
 - GitHub Actions
+
+## Requirements change and checkout resilience
+
+The move from a cat-only service to Rescue Pet Card involved species-specific records, purchase eligibility, owner preview, and continuity for already-issued physical cards. It was treated as a service migration rather than a label change.
+
+A separate improvement in PR #56 distinguished purchase-critical fields from optional attribution fields (`ga_client_id`, `ga_session_id`, and first/last-touch UTM metadata). Invalid optional items, including values over Stripe's 500-character metadata limit, are dropped individually rather than truncated or allowed to block checkout. Required business-field validation remains in place; no automatic Stripe retry was introduced, and raw attribution values are not logged.
+
+The reviewed change passed 32 mocked Deno tests, with three regression tests failing against the old implementation, plus type checks and independent review. The PR was merged, but its record explicitly did not establish Edge Function deployment. This is a tested, merged resilience improvement—not evidence of a completed production-outage recovery. I owned the priority and acceptance boundary; AI agents implemented and reviewed the change.
 
 ## Development Operation
 

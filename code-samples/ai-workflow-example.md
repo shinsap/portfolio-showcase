@@ -2,6 +2,8 @@
 
 This describes the working approach used across the case studies; release authority and checks depend on each project's agreed scope. The adjacent TypeScript/TSX snippets are illustrative examples, not extracted production code.
 
+I use herdr as my development workspace, running Claude Code and Codex in multiple panes to organize project work and separate implementation from review.
+
 1. **Frame the problem.** Identify users, operational constraints, business objective, and what the product will not do.
 2. **Define acceptance.** Specify data and authorization boundaries, failure behavior, and observable acceptance criteria before directing implementation.
 3. **Implement a bounded change.** Claude Code or another implementation agent writes code, focused tests, and updated documentation.
